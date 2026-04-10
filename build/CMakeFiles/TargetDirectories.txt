@@ -1,0 +1,3 @@
+D:/Abduhoo University/SEMESTER 2/Projects/ShadowBreach_v2/build/CMakeFiles/ShadowBreach.dir
+D:/Abduhoo University/SEMESTER 2/Projects/ShadowBreach_v2/build/CMakeFiles/edit_cache.dir
+D:/Abduhoo University/SEMESTER 2/Projects/ShadowBreach_v2/build/CMakeFiles/rebuild_cache.dir
