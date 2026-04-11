@@ -1,7 +1,7 @@
 CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj: \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Game.cpp \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Game.h \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Map.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Game.cpp \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Game.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Map.h \
  C:/msys64/mingw64/include/c++/15.2.0/vector \
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -62,15 +62,15 @@ CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/15.2.0/tuple \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Player.h \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Entity.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Player.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Entity.h \
  C:/raylib/include/raylib.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  C:/msys64/mingw64/include/stdarg.h \
  C:/msys64/mingw64/include/_mingw_stdarg.h \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Enemy.h \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Renderer.h \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\LevelManager.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Enemy.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Renderer.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\LevelManager.h \
  C:/msys64/mingw64/include/c++/15.2.0/string \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \

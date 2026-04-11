@@ -124,7 +124,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake"
-  "D:/Abduhoo University/SEMESTER 2/Projects/ShadowBreach_v2/CMakeLists.txt"
+  "D:/Abduhoo University/SEMESTER 2/Projects/Blood-Sector/CMakeLists.txt"
   "CMakeFiles/4.3.0-rc2/CMakeCCompiler.cmake"
   "CMakeFiles/4.3.0-rc2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.3.0-rc2/CMakeRCCompiler.cmake"

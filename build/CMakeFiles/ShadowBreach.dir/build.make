@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2"
+CMAKE_SOURCE_DIR = "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build"
+CMAKE_BINARY_DIR = "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ShadowBreach.dir/depend.make
@@ -73,123 +73,123 @@ CMakeFiles/ShadowBreach.dir/codegen:
 
 CMakeFiles/ShadowBreach.dir/src/main.cpp.obj: CMakeFiles/ShadowBreach.dir/flags.make
 CMakeFiles/ShadowBreach.dir/src/main.cpp.obj: CMakeFiles/ShadowBreach.dir/includes_CXX.rsp
-CMakeFiles/ShadowBreach.dir/src/main.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/ShadowBreach_v2/src/main.cpp
+CMakeFiles/ShadowBreach.dir/src/main.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/Blood-Sector/src/main.cpp
 CMakeFiles/ShadowBreach.dir/src/main.cpp.obj: CMakeFiles/ShadowBreach.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ShadowBreach.dir/src/main.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/main.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\main.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\main.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ShadowBreach.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/main.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\main.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\main.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\main.cpp"
 
 CMakeFiles/ShadowBreach.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ShadowBreach.dir/src/main.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\main.cpp" > CMakeFiles\ShadowBreach.dir\src\main.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\main.cpp" > CMakeFiles\ShadowBreach.dir\src\main.cpp.i
 
 CMakeFiles/ShadowBreach.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ShadowBreach.dir/src/main.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\main.cpp" -o CMakeFiles\ShadowBreach.dir\src\main.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\main.cpp" -o CMakeFiles\ShadowBreach.dir\src\main.cpp.s
 
 CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj: CMakeFiles/ShadowBreach.dir/flags.make
 CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj: CMakeFiles/ShadowBreach.dir/includes_CXX.rsp
-CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/ShadowBreach_v2/src/Entity.cpp
+CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/Blood-Sector/src/Entity.cpp
 CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj: CMakeFiles/ShadowBreach.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Entity.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Entity.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Entity.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Entity.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Entity.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Entity.cpp"
 
 CMakeFiles/ShadowBreach.dir/src/Entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ShadowBreach.dir/src/Entity.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Entity.cpp" > CMakeFiles\ShadowBreach.dir\src\Entity.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Entity.cpp" > CMakeFiles\ShadowBreach.dir\src\Entity.cpp.i
 
 CMakeFiles/ShadowBreach.dir/src/Entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ShadowBreach.dir/src/Entity.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Entity.cpp" -o CMakeFiles\ShadowBreach.dir\src\Entity.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Entity.cpp" -o CMakeFiles\ShadowBreach.dir\src\Entity.cpp.s
 
 CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj: CMakeFiles/ShadowBreach.dir/flags.make
 CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj: CMakeFiles/ShadowBreach.dir/includes_CXX.rsp
-CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/ShadowBreach_v2/src/Map.cpp
+CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/Blood-Sector/src/Map.cpp
 CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj: CMakeFiles/ShadowBreach.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Map.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Map.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Map.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Map.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Map.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Map.cpp"
 
 CMakeFiles/ShadowBreach.dir/src/Map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ShadowBreach.dir/src/Map.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Map.cpp" > CMakeFiles\ShadowBreach.dir\src\Map.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Map.cpp" > CMakeFiles\ShadowBreach.dir\src\Map.cpp.i
 
 CMakeFiles/ShadowBreach.dir/src/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ShadowBreach.dir/src/Map.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Map.cpp" -o CMakeFiles\ShadowBreach.dir\src\Map.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Map.cpp" -o CMakeFiles\ShadowBreach.dir\src\Map.cpp.s
 
 CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj: CMakeFiles/ShadowBreach.dir/flags.make
 CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj: CMakeFiles/ShadowBreach.dir/includes_CXX.rsp
-CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/ShadowBreach_v2/src/Player.cpp
+CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/Blood-Sector/src/Player.cpp
 CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj: CMakeFiles/ShadowBreach.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Player.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Player.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Player.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Player.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Player.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Player.cpp"
 
 CMakeFiles/ShadowBreach.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ShadowBreach.dir/src/Player.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Player.cpp" > CMakeFiles\ShadowBreach.dir\src\Player.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Player.cpp" > CMakeFiles\ShadowBreach.dir\src\Player.cpp.i
 
 CMakeFiles/ShadowBreach.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ShadowBreach.dir/src/Player.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Player.cpp" -o CMakeFiles\ShadowBreach.dir\src\Player.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Player.cpp" -o CMakeFiles\ShadowBreach.dir\src\Player.cpp.s
 
 CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj: CMakeFiles/ShadowBreach.dir/flags.make
 CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj: CMakeFiles/ShadowBreach.dir/includes_CXX.rsp
-CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/ShadowBreach_v2/src/Enemy.cpp
+CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/Blood-Sector/src/Enemy.cpp
 CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj: CMakeFiles/ShadowBreach.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Enemy.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Enemy.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Enemy.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Enemy.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Enemy.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Enemy.cpp"
 
 CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Enemy.cpp" > CMakeFiles\ShadowBreach.dir\src\Enemy.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Enemy.cpp" > CMakeFiles\ShadowBreach.dir\src\Enemy.cpp.i
 
 CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Enemy.cpp" -o CMakeFiles\ShadowBreach.dir\src\Enemy.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Enemy.cpp" -o CMakeFiles\ShadowBreach.dir\src\Enemy.cpp.s
 
 CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj: CMakeFiles/ShadowBreach.dir/flags.make
 CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj: CMakeFiles/ShadowBreach.dir/includes_CXX.rsp
-CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/ShadowBreach_v2/src/Renderer.cpp
+CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/Blood-Sector/src/Renderer.cpp
 CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj: CMakeFiles/ShadowBreach.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Renderer.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Renderer.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Renderer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Renderer.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Renderer.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Renderer.cpp"
 
 CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Renderer.cpp" > CMakeFiles\ShadowBreach.dir\src\Renderer.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Renderer.cpp" > CMakeFiles\ShadowBreach.dir\src\Renderer.cpp.i
 
 CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Renderer.cpp" -o CMakeFiles\ShadowBreach.dir\src\Renderer.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Renderer.cpp" -o CMakeFiles\ShadowBreach.dir\src\Renderer.cpp.s
 
 CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj: CMakeFiles/ShadowBreach.dir/flags.make
 CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj: CMakeFiles/ShadowBreach.dir/includes_CXX.rsp
-CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/ShadowBreach_v2/src/Game.cpp
+CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/Blood-Sector/src/Game.cpp
 CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj: CMakeFiles/ShadowBreach.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Game.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Game.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Game.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\Game.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\Game.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Game.cpp"
 
 CMakeFiles/ShadowBreach.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ShadowBreach.dir/src/Game.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Game.cpp" > CMakeFiles\ShadowBreach.dir\src\Game.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Game.cpp" > CMakeFiles\ShadowBreach.dir\src\Game.cpp.i
 
 CMakeFiles/ShadowBreach.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ShadowBreach.dir/src/Game.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\Game.cpp" -o CMakeFiles\ShadowBreach.dir\src\Game.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\Game.cpp" -o CMakeFiles\ShadowBreach.dir\src\Game.cpp.s
 
 CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj: CMakeFiles/ShadowBreach.dir/flags.make
 CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj: CMakeFiles/ShadowBreach.dir/includes_CXX.rsp
-CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/ShadowBreach_v2/src/LevelManager.cpp
+CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj: D:/Abduhoo\ University/SEMESTER\ 2/Projects/Blood-Sector/src/LevelManager.cpp
 CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj: CMakeFiles/ShadowBreach.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\LevelManager.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\LevelManager.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\LevelManager.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj -MF CMakeFiles\ShadowBreach.dir\src\LevelManager.cpp.obj.d -o CMakeFiles\ShadowBreach.dir\src\LevelManager.cpp.obj -c "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\LevelManager.cpp"
 
 CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\LevelManager.cpp" > CMakeFiles\ShadowBreach.dir\src\LevelManager.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\LevelManager.cpp" > CMakeFiles\ShadowBreach.dir\src\LevelManager.cpp.i
 
 CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\src\LevelManager.cpp" -o CMakeFiles\ShadowBreach.dir\src\LevelManager.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\src\LevelManager.cpp" -o CMakeFiles\ShadowBreach.dir\src\LevelManager.cpp.s
 
 # Object files for target ShadowBreach
 ShadowBreach_OBJECTS = \
@@ -218,7 +218,7 @@ ShadowBreach.exe: C:/raylib/lib/libraylib.a
 ShadowBreach.exe: CMakeFiles/ShadowBreach.dir/linkLibs.rsp
 ShadowBreach.exe: CMakeFiles/ShadowBreach.dir/objects1.rsp
 ShadowBreach.exe: CMakeFiles/ShadowBreach.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ShadowBreach.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ShadowBreach.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ShadowBreach.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,6 +230,6 @@ CMakeFiles/ShadowBreach.dir/clean:
 .PHONY : CMakeFiles/ShadowBreach.dir/clean
 
 CMakeFiles/ShadowBreach.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2" "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2" "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build" "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build" "D:\Abduhoo University\SEMESTER 2\Projects\ShadowBreach_v2\build\CMakeFiles\ShadowBreach.dir\DependInfo.cmake" "--color=$(COLOR)" ShadowBreach
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector" "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector" "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build" "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build" "D:\Abduhoo University\SEMESTER 2\Projects\Blood-Sector\build\CMakeFiles\ShadowBreach.dir\DependInfo.cmake" "--color=$(COLOR)" ShadowBreach
 .PHONY : CMakeFiles/ShadowBreach.dir/depend
 

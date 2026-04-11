@@ -23,9 +23,9 @@ Renderer::Renderer(int screenW, int screenH)
     texStalker[0] = safeLoad("assets/sprites/stalker.png");
     texStalker[1] = safeLoad("assets/sprites/stalker_2.png");
     texBoss[0]    = safeLoad("assets/sprites/boss.png");
-    texBoss[1]    = safeLoad("assets/sprites/boss_2.png");
+    texBoss[1]    = safeLoad("assets/sprites/boss_charging.png");
     texGunIdle    = safeLoad("assets/sprites/gun_idle.png");
-    texGunFire    = safeLoad("assets/sprites/gun_fire.png");
+    texGunFire    = safeLoad("assets/sprites/gun fire.png");
 }
 
 Renderer::~Renderer() {

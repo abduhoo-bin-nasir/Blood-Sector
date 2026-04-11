@@ -1,7 +1,7 @@
 CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj: \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Player.cpp \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Player.h \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Entity.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Player.cpp \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Player.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Entity.h \
  C:/raylib/include/raylib.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  C:/msys64/mingw64/include/stdarg.h \
@@ -66,8 +66,8 @@ CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/15.2.0/tuple \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Enemy.h \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\ShadowBreach_v2\src\Map.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Enemy.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Map.h \
  C:/msys64/mingw64/include/c++/15.2.0/cmath \
  C:/msys64/mingw64/include/math.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
