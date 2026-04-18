@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ShadowBreach
+# Target rules for targets named Blood-Sector
 
 # Build rule for target.
-ShadowBreach: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ShadowBreach
-.PHONY : ShadowBreach
+Blood-Sector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Blood-Sector
+.PHONY : Blood-Sector
 
 # fast build rule for target.
-ShadowBreach/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/build
-.PHONY : ShadowBreach/fast
+Blood-Sector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/build
+.PHONY : Blood-Sector/fast
 
 src/Enemy.obj: src/Enemy.cpp.obj
 .PHONY : src/Enemy.obj
 
 # target to build an object file
 src/Enemy.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Enemy.cpp.obj
 .PHONY : src/Enemy.cpp.obj
 
 src/Enemy.i: src/Enemy.cpp.i
@@ -141,7 +141,7 @@ src/Enemy.i: src/Enemy.cpp.i
 
 # target to preprocess a source file
 src/Enemy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Enemy.cpp.i
 .PHONY : src/Enemy.cpp.i
 
 src/Enemy.s: src/Enemy.cpp.s
@@ -149,7 +149,7 @@ src/Enemy.s: src/Enemy.cpp.s
 
 # target to generate assembly for a file
 src/Enemy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Enemy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Enemy.cpp.s
 .PHONY : src/Enemy.cpp.s
 
 src/Entity.obj: src/Entity.cpp.obj
@@ -157,7 +157,7 @@ src/Entity.obj: src/Entity.cpp.obj
 
 # target to build an object file
 src/Entity.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Entity.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Entity.cpp.obj
 .PHONY : src/Entity.cpp.obj
 
 src/Entity.i: src/Entity.cpp.i
@@ -165,7 +165,7 @@ src/Entity.i: src/Entity.cpp.i
 
 # target to preprocess a source file
 src/Entity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Entity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Entity.cpp.i
 .PHONY : src/Entity.cpp.i
 
 src/Entity.s: src/Entity.cpp.s
@@ -173,7 +173,7 @@ src/Entity.s: src/Entity.cpp.s
 
 # target to generate assembly for a file
 src/Entity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Entity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Entity.cpp.s
 .PHONY : src/Entity.cpp.s
 
 src/Game.obj: src/Game.cpp.obj
@@ -181,7 +181,7 @@ src/Game.obj: src/Game.cpp.obj
 
 # target to build an object file
 src/Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Game.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Game.cpp.obj
 .PHONY : src/Game.cpp.obj
 
 src/Game.i: src/Game.cpp.i
@@ -189,7 +189,7 @@ src/Game.i: src/Game.cpp.i
 
 # target to preprocess a source file
 src/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Game.cpp.i
 .PHONY : src/Game.cpp.i
 
 src/Game.s: src/Game.cpp.s
@@ -197,7 +197,7 @@ src/Game.s: src/Game.cpp.s
 
 # target to generate assembly for a file
 src/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
 src/LevelManager.obj: src/LevelManager.cpp.obj
@@ -205,7 +205,7 @@ src/LevelManager.obj: src/LevelManager.cpp.obj
 
 # target to build an object file
 src/LevelManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/LevelManager.cpp.obj
 .PHONY : src/LevelManager.cpp.obj
 
 src/LevelManager.i: src/LevelManager.cpp.i
@@ -213,7 +213,7 @@ src/LevelManager.i: src/LevelManager.cpp.i
 
 # target to preprocess a source file
 src/LevelManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/LevelManager.cpp.i
 .PHONY : src/LevelManager.cpp.i
 
 src/LevelManager.s: src/LevelManager.cpp.s
@@ -221,7 +221,7 @@ src/LevelManager.s: src/LevelManager.cpp.s
 
 # target to generate assembly for a file
 src/LevelManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/LevelManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/LevelManager.cpp.s
 .PHONY : src/LevelManager.cpp.s
 
 src/Map.obj: src/Map.cpp.obj
@@ -229,7 +229,7 @@ src/Map.obj: src/Map.cpp.obj
 
 # target to build an object file
 src/Map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Map.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Map.cpp.obj
 .PHONY : src/Map.cpp.obj
 
 src/Map.i: src/Map.cpp.i
@@ -237,7 +237,7 @@ src/Map.i: src/Map.cpp.i
 
 # target to preprocess a source file
 src/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Map.cpp.i
 .PHONY : src/Map.cpp.i
 
 src/Map.s: src/Map.cpp.s
@@ -245,7 +245,7 @@ src/Map.s: src/Map.cpp.s
 
 # target to generate assembly for a file
 src/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Map.cpp.s
 .PHONY : src/Map.cpp.s
 
 src/Player.obj: src/Player.cpp.obj
@@ -253,7 +253,7 @@ src/Player.obj: src/Player.cpp.obj
 
 # target to build an object file
 src/Player.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Player.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Player.cpp.obj
 .PHONY : src/Player.cpp.obj
 
 src/Player.i: src/Player.cpp.i
@@ -261,7 +261,7 @@ src/Player.i: src/Player.cpp.i
 
 # target to preprocess a source file
 src/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Player.cpp.i
 .PHONY : src/Player.cpp.i
 
 src/Player.s: src/Player.cpp.s
@@ -269,7 +269,7 @@ src/Player.s: src/Player.cpp.s
 
 # target to generate assembly for a file
 src/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
 src/Renderer.obj: src/Renderer.cpp.obj
@@ -277,7 +277,7 @@ src/Renderer.obj: src/Renderer.cpp.obj
 
 # target to build an object file
 src/Renderer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Renderer.cpp.obj
 .PHONY : src/Renderer.cpp.obj
 
 src/Renderer.i: src/Renderer.cpp.i
@@ -285,7 +285,7 @@ src/Renderer.i: src/Renderer.cpp.i
 
 # target to preprocess a source file
 src/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Renderer.cpp.i
 .PHONY : src/Renderer.cpp.i
 
 src/Renderer.s: src/Renderer.cpp.s
@@ -293,7 +293,7 @@ src/Renderer.s: src/Renderer.cpp.s
 
 # target to generate assembly for a file
 src/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/Renderer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/Renderer.cpp.s
 .PHONY : src/Renderer.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -301,7 +301,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -309,7 +309,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -317,7 +317,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ShadowBreach.dir\build.make CMakeFiles/ShadowBreach.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Blood-Sector.dir\build.make CMakeFiles/Blood-Sector.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -328,7 +328,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... ShadowBreach
+	@echo ... Blood-Sector
 	@echo ... src/Enemy.obj
 	@echo ... src/Enemy.i
 	@echo ... src/Enemy.s
