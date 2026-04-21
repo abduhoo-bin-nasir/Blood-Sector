@@ -31,6 +31,9 @@ public:
                  const std::vector<Enemy*>& enemies);
 
 private:
+    Texture2D texWallStone;
+    Texture2D texWallMetal;
+    Texture2D texWallBlood;
     Texture2D texWalker[2];
     Texture2D texStalker[2];
     Texture2D texBoss[2];

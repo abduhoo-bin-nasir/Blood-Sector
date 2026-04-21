@@ -77,6 +77,63 @@ static const int L4[L4_H][L4_W] = {
     {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
 };
 
+// ── Level 5: evil residents (30×25) ──────────────────────────────────────────────
+static const int L5_W = 30, L5_H = 25;
+static const int L5[L5_H][L5_W] = {
+
+{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+
+{1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0,1},
+
+{1,0,1,1,1,1,0,0,0,0,1,0,2,2,2,0,1,0,0,0,1,1,1,1,0,0,0,1,0,1},
+
+{1,0,1,0,0,1,0,1,1,0,1,0,2,0,2,0,1,0,1,0,0,0,0,1,0,1,0,1,0,1},
+
+{1,0,1,0,0,1,0,1,0,0,1,0,2,2,2,0,1,0,1,1,1,1,0,1,0,1,0,1,0,1},
+
+{1,0,0,0,0,1,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,1},
+
+{1,1,1,1,0,1,0,1,0,0,0,1,1,1,3,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1},
+
+{1,0,0,1,0,0,0,1,1,1,0,1,3,0,0,0,3,0,0,1,0,0,0,1,0,0,0,0,0,1},
+
+{1,0,0,1,1,1,0,0,0,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1},
+
+{1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1},
+
+{1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1},
+
+{1,0,0,0,0,1,0,0,0,1,0,0,0,3,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1},
+
+{1,0,1,1,1,1,1,1,0,1,1,1,0,0,0,0,0,1,1,1,1,1,0,1,0,1,1,1,0,1},
+
+{1,0,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1},
+
+{1,0,1,0,1,1,0,1,1,1,0,1,0,1,3,1,0,1,0,1,0,1,1,1,1,1,0,1,1,1},
+
+{1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1},
+
+{1,1,1,0,1,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1},
+
+{1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1},
+
+{1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1},
+
+{1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1},
+
+{1,0,1,0,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1},
+
+{1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1},
+
+{1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1},
+
+{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+
+{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
+
+};
+
+
 // =============================================================================
 LevelManager::LevelManager() {}
 
@@ -86,6 +143,7 @@ std::vector<SpawnEntry> LevelManager::loadLevel(int n, Map& map) {
         case 2: applyLevel2(map); break;
         case 3: applyLevel3(map); break;
         case 4: applyLevel4(map); break;
+        case 5: applyLevel5(map); break;
         default: applyLevel1(map); break;
     }
 
@@ -133,6 +191,20 @@ std::vector<SpawnEntry> LevelManager::loadLevel(int n, Map& map) {
             spawns.push_back({ SpawnEntry::Type::Walker,  2.5f,  11.5f });
             spawns.push_back({ SpawnEntry::Type::Walker,  17.5f, 11.5f });
             break;
+        
+        case 5:
+            // Evil residents: 10 Walkers, 5 Stalkers, 2 Bosses — the final test
+            spawns.push_back({ SpawnEntry::Type::Boss,    5.0f,  5.0f });
+            spawns.push_back({ SpawnEntry::Type::Boss,    25.0f, 20.0f });
+            spawns.push_back({ SpawnEntry::Type::Stalker, 10.0f, 10.0f });
+            spawns.push_back({ SpawnEntry::Type::Stalker, 20.0f, 10.0f });
+            spawns.push_back({ SpawnEntry::Type::Stalker, 15.0f, 15.0f });
+            spawns.push_back({ SpawnEntry::Type::Walker,  3.5f,  3.5f });
+            spawns.push_back({ SpawnEntry::Type::Walker,  27.5f, 3.5f });
+            spawns.push_back({ SpawnEntry::Type::Walker,  3.5f,  21.5f });
+            spawns.push_back({ SpawnEntry::Type::Walker,  27.5f, 21.5f });
+            spawns.push_back({ SpawnEntry::Type::Walker,  15.0f, 3.5f });
+            spawns.push_back({ SpawnEntry::Type::Walker,  15.0f, 21.5f });
 
         default: break;
     }
@@ -144,8 +216,9 @@ std::string LevelManager::getLevelName(int n) const {
     switch (n) {
         case 1: return "SECTOR 1 — THE BREACH";
         case 2: return "SECTOR 2 — THE CORRIDOR";
-        case 3: return "SECTOR 3 — THE LABYRINTH";
+        case 3: return "SECTOR 3 — THE LONG WAY";
         case 4: return "SECTOR 4 — THE CORE";
+        case 5: return "SECTOR 5 — THE UMBURELLA";
         default: return "SECTOR ???";
     }
 }
@@ -153,9 +226,10 @@ std::string LevelManager::getLevelName(int n) const {
 std::string LevelManager::getLevelSubtitle(int n) const {
     switch (n) {
         case 1: return "Something is already inside.";
-        case 2: return "The corridor does not end.";
-        case 3: return "Turning back is not an option.";
+        case 2: return "Ambush. Stay alert.";
+        case 3: return "Turning back is an option.";
         case 4: return "It knows you are here.";
+        case 5: return "Can you do it?";
         default: return "";
     }
 }
@@ -166,6 +240,7 @@ int LevelManager::getLevelWidth(int n) const {
         case 2: return L2_W;
         case 3: return L3_W;
         case 4: return L4_W;
+        case 5: return L5_W;
         default: return L1_W;
     }
 }
@@ -176,6 +251,7 @@ int LevelManager::getLevelHeight(int n) const {
         case 2: return L2_H;
         case 3: return L3_H;
         case 4: return L4_H;
+        case 5: return L5_H;
         default: return L1_H;
     }
 }
@@ -184,3 +260,5 @@ void LevelManager::applyLevel1(Map& map) { map.setGrid(&L1[0][0], L1_W, L1_H); }
 void LevelManager::applyLevel2(Map& map) { map.setGrid(&L2[0][0], L2_W, L2_H); }
 void LevelManager::applyLevel3(Map& map) { map.setGrid(&L3[0][0], L3_W, L3_H); }
 void LevelManager::applyLevel4(Map& map) { map.setGrid(&L4[0][0], L4_W, L4_H); }
+void LevelManager::applyLevel5(Map& map) { map.setGrid(&L5[0][0], L5_W, L5_H); }
+

@@ -22,7 +22,7 @@ struct SpawnEntry {
 
 class LevelManager {
 public:
-    static const int TOTAL_LEVELS = 4;
+    static const int TOTAL_LEVELS = 5;
 
     LevelManager();
     bool isBossLevel(int n) const { return n == TOTAL_LEVELS; }
@@ -42,4 +42,5 @@ private:
     void applyLevel2(Map& map);
     void applyLevel3(Map& map);
     void applyLevel4(Map& map);
+    void applyLevel5(Map& map);
 };

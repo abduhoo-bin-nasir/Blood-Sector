@@ -17,7 +17,9 @@ Renderer::Renderer(int screenW, int screenH)
         if (FileExists(path)) return LoadTexture(path);
         return Texture2D{};
     };
-
+    texWallStone = safeLoad("assets/sprites/wall_stone.png");
+    texWallMetal = safeLoad("assets/sprites/wall_metal.png");
+    texWallBlood = safeLoad("assets/sprites/wall_blood.png");
     texWalker[0]  = safeLoad("assets/sprites/walker.png");
     texWalker[1]  = safeLoad("assets/sprites/walker_2.png");
     texStalker[0] = safeLoad("assets/sprites/stalker.png");
@@ -31,6 +33,9 @@ Renderer::Renderer(int screenW, int screenH)
 Renderer::~Renderer() {
     delete[] zBuffer;
     for (int i = 0; i < 2; i++) {
+        if (texWallStone.id > 0) UnloadTexture(texWallStone);
+        if (texWallMetal.id > 0) UnloadTexture(texWallMetal);
+        if (texWallBlood.id > 0) UnloadTexture(texWallBlood);
         if (texWalker[i].id  > 0) UnloadTexture(texWalker[i]);
         if (texStalker[i].id > 0) UnloadTexture(texStalker[i]);
         if (texBoss[i].id    > 0) UnloadTexture(texBoss[i]);
@@ -129,8 +134,38 @@ void Renderer::castWalls(const Map& map, const Player& player) {
         int drawTop = sh/2 - wallH/2;  if (drawTop < 0)   drawTop = 0;
         int drawBot = sh/2 + wallH/2;  if (drawBot >= sh)  drawBot = sh-1;
 
-        Color wallCol = getWallColor(wallType, side == 1, perpDist);
-        DrawRectangle(col, drawTop, 1, drawBot - drawTop, wallCol);
+        // Pick texture based on wall type
+        Texture2D* wallTex = nullptr;
+        if      (wallType == 2 && texWallMetal.id > 0) wallTex = &texWallMetal;
+        else if (wallType == 3 && texWallBlood.id > 0) wallTex = &texWallBlood;
+        else if (texWallStone.id > 0)                  wallTex = &texWallStone;
+
+        if (wallTex != nullptr) {
+            // Calculate texture X coordinate from where ray hit the wall
+            float wallX;
+            if (side == 0) wallX = player.y + perpDist * rayDY;
+            else            wallX = player.x + perpDist * rayDX;
+            wallX -= floorf(wallX);  // fractional part only (0.0 to 1.0)
+
+            int texX = (int)(wallX * wallTex->width);
+            if (texX >= wallTex->width) texX = wallTex->width - 1;
+
+            // Dark side shading
+            float shade = (side == 1) ? 0.6f : 1.0f;
+            // Distance fog
+            float fog = 1.0f / (1.0f + perpDist * 0.28f);
+            if (fog < 0.12f) fog = 0.12f;
+            shade *= fog;
+            unsigned char tint = (unsigned char)(shade * 255);
+            Color col2 = { tint, tint, tint, 255 };
+
+            Rectangle src  = { (float)texX, 0, 1, (float)wallTex->height };
+            Rectangle dest = { (float)col, (float)drawTop, 1, (float)(drawBot - drawTop) };
+            DrawTexturePro(*wallTex, src, dest, {0,0}, 0.0f, col2);
+        } else {
+            Color wallCol = getWallColor(wallType, side == 1, perpDist);
+            DrawRectangle(col, drawTop, 1, drawBot - drawTop, wallCol);
+        }
     }
 }
 
