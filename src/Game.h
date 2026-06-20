@@ -10,7 +10,6 @@
 // =============================================================================
 // Game  —  Top-level class. Owns all objects and drives the main loop.
 //
-// VIVA POINTS:
 //   - Composition: has-a Map, Player, Renderer, LevelManager, enemies
 //   - GameState enum drives a simple state machine for screens
 //   - LevelManager decouples level data from game logic
@@ -18,7 +17,9 @@
 // =============================================================================
 
 enum class GameState {
-    TITLE,          // splash screen
+    TITLE,          // main menu
+    HOW_TO_PLAY,    // controls/help screen
+    CUTSCENE,       // opening story slides
     PLAYING,        // normal gameplay
     LEVEL_COMPLETE, // end-of-level overlay (enemies cleared)
     GAME_OVER,      // player died
@@ -27,8 +28,8 @@ enum class GameState {
 
 class Game {
 public:
-    static const int SW = 960;
-    static const int SH = 540;
+        static int SW;
+        static int SH;
 
     Game();
     ~Game();
@@ -42,6 +43,8 @@ private:
     std::vector<Enemy*>  enemies;
     Renderer*            renderer;
     LevelManager         levelMgr;
+    Texture2D cutsceneImages[5];
+    bool      cutsceneImagesLoaded;
 
     // ── State ─────────────────────────────────────────────────────────────────
     GameState     state;
@@ -51,6 +54,14 @@ private:
     int            damageCooldown;
     int            hurtFlash;
     bool           showMinimap;
+
+    // ── Menu ──────────────────────────────────────────────────────────────────
+    int            menuSelection;     // 0=Start, 1=HowToPlay, 2=Exit
+    float          menuAnimTimer;     // for entrance animations
+
+    // ── Cutscene ──────────────────────────────────────────────────────────────
+    int            cutsceneSlide;     // current slide index
+    float          cutsceneTimer;     // fade/anim timer per slide
 
     // ── Audio ─────────────────────────────────────────────────────────────────
     Sound  sfxGunshot;
@@ -70,10 +81,14 @@ private:
     void update();
     void draw();
     void cleanup();
+    void loadCutsceneImages();
 
     void updatePlaying();
     void drawPlaying();
-    void drawTitle();
+    void drawMenu();
+    void updateMenu();
+    void drawHowToPlay();
+    void drawCutscene();
     void drawLevelComplete();
     void drawGameOver();
     void drawVictory();

@@ -1,16 +1,7 @@
 #pragma once
 #include "raylib.h"
 
-class Map; // forward declaration — avoids circular includes
-
-// =============================================================================
-// Entity  —  Abstract base class for ALL game objects (player, enemies, etc.)
-//
-// VIVA POINTS:
-//   - Abstract class: has pure-virtual methods, cannot be instantiated directly
-//   - virtual destructor: ensures correct cleanup of derived class objects
-//   - Shared data (position, health, alive) owned here once — DRY principle
-// =============================================================================
+class Map; 
 class Entity {
 public:
     float x, y;     // World position (1 unit = 1 map tile)
@@ -22,7 +13,7 @@ public:
     virtual ~Entity() = default;
 
     // Pure virtual — derived classes MUST override
-    // VIVA: calling update() on a base pointer dispatches to the right subclass
+    
     virtual void update(const Map& map) = 0;
 
     void    takeDamage(int dmg);

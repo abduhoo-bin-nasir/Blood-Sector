@@ -52,9 +52,7 @@ void Renderer::drawScene(const Map& map, const Player& player,
     else                   renderTPP(map, player, enemies);
 }
 
-// =============================================================================
-// FPP — First Person Perspective (Doom-style raycasting)
-// =============================================================================
+// FPP — First Person Perspective 
 void Renderer::renderFPP(const Map& map, const Player& player,
                           const std::vector<Enemy*>& enemies)
 {
@@ -62,14 +60,11 @@ void Renderer::renderFPP(const Map& map, const Player& player,
     drawSprites(player, enemies);
 }
 
-// ─── DDA Raycasting ───────────────────────────────────────────────────────────
+//                          DDA Raycasting 
 // For each screen column we cast a ray using the DDA grid traversal algorithm.
 // DDA finds the exact tile the ray hits without checking every pixel on the ray.
 //
-// VIVA: Be ready to explain:
-//   - Why perpendicular distance (not Euclidean) prevents fisheye distortion
-//   - What the zBuffer is for and why sprites need it
-//   - Why we subtract deltaDistX/Y at the end to get perpendicular distance
+
 void Renderer::castWalls(const Map& map, const Player& player) {
     // Solid ceiling and floor (drawn first; walls rendered on top)
     DrawRectangle(0, 0,    sw, sh/2, {  10,  8,  8, 255 }); // ceiling
@@ -173,8 +168,7 @@ void Renderer::castWalls(const Map& map, const Player& player) {
 // Projects each enemy's world position to a 2D screen position.
 // Uses the inverse of the camera matrix (dir × plane vectors).
 //
-// VIVA: Key formula — transformY is depth in camera space.
-//       Any column where transformY >= zBuffer[col] is behind a wall → skip it.
+
 void Renderer::drawSprites(const Player& player,
                             const std::vector<Enemy*>& enemies)
 {
@@ -286,9 +280,7 @@ void Renderer::drawSprites(const Player& player,
     }
 }
 
-// =============================================================================
-// TPP — Third Person / Top-Down view (Resident Evil overhead style)
-// =============================================================================
+// TPP — Third Person / Top-Down view 
 void Renderer::renderTPP(const Map& map, const Player& player,
                           const std::vector<Enemy*>& enemies)
 {
@@ -355,9 +347,7 @@ void Renderer::renderTPP(const Map& map, const Player& player,
              { 100, 160, 225, 55 });
 }
 
-// =============================================================================
 // HUD
-// =============================================================================
 void Renderer::drawHUD(const Player& player,
                         int currentLevel, int totalLevels,
                         Mode mode, bool gameOver,

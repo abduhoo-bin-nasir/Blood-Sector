@@ -7,9 +7,8 @@ class Player;
 class Enemy;
 
 // =============================================================================
-// Renderer  —  All drawing code lives here, nothing else does
+// Renderer
 //
-// VIVA POINTS:
 //   - Separation of concerns: Game logic never calls DrawRectangle etc.
 //   - FPP uses DDA raycasting + sprite projection with zBuffer
 //   - drawHUD now accepts enemy list so it can find the Boss and draw its bar
@@ -39,6 +38,8 @@ private:
     Texture2D texBoss[2];
     Texture2D texGunIdle;
     Texture2D texGunFire;
+
+    
     int       animFrame;   // ticks up each frame for walk animation
     int    sw, sh;
     float* zBuffer;

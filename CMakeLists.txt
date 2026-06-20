@@ -5,7 +5,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # ─── Find raylib ──────────────────────────────────────────────────────────────
-find_package(raylib QUIET)
+set(raylib_DIR "C:/raylib-sdk/lib/cmake/raylib")
+find_package(raylib REQUIRED)
+
 
 if(NOT raylib_FOUND)
     # Fallback: common Windows install paths (adjust if yours differs)

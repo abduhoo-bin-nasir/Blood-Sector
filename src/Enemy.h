@@ -1,16 +1,6 @@
 #pragma once
 #include "Entity.h"
 
-// =============================================================================
-// Enemy  —  Abstract base class for all enemy types
-//
-// VIVA POINTS:
-//   - Inherits from Entity (position, health, collision)
-//   - behavior() is pure virtual: every enemy type MUST define its own AI
-//   - Storing enemies as vector<Enemy*> and calling e->behavior() is
-//     runtime polymorphism — the correct subclass method runs automatically
-//   - State machine (PATROL/CHASE/ATTACK) is a classic AI pattern
-// =============================================================================
 class Enemy : public Entity {
 public:
     // Finite state machine states

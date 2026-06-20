@@ -4,8 +4,8 @@
 #include <string>
 #include <algorithm>
 
-const int Game::SW;
-const int Game::SH;
+int Game::SW = 960;
+int Game::SH = 540;
 
 // ─────────────────────────────────────────────────────────────────────────────
 Game::Game()
@@ -15,6 +15,8 @@ Game::Game()
       currentLevel(1), transitionTimer(0),
       damageCooldown(0), hurtFlash(0),
       showMinimap(false),
+      menuSelection(0), menuAnimTimer(0.0f),
+      cutsceneSlide(0), cutsceneTimer(0.0f),
       audioReady(false),
       bossWaveTimer(0), bossWaveCount(0)
 {}
@@ -23,19 +25,21 @@ Game::~Game() { cleanup(); }
 
 // ─── run ─────────────────────────────────────────────────────────────────────
 void Game::run() {
-    InitWindow(SW, SH, "SHADOW BREACH");
+    SetConfigFlags(FLAG_FULLSCREEN_MODE);
+    InitWindow(0, 0, "BLOOD SECTOR");
+    SW = GetScreenWidth();
+    SH = GetScreenHeight();
     SetTargetFPS(60);
     InitAudioDevice();
-    DisableCursor();
 
     loadAudio();
     init();
 
-    if (audioReady && IsMusicReady(musicAmbient))
+    if (audioReady && IsMusicValid(musicAmbient))
         PlayMusicStream(musicAmbient);
 
     while (!WindowShouldClose()) {
-        if (audioReady && IsMusicReady(musicAmbient))
+        if (audioReady && IsMusicValid(musicAmbient))
             UpdateMusicStream(musicAmbient);
         update();
         draw();
@@ -48,7 +52,7 @@ void Game::run() {
 
 // ─── Audio ────────────────────────────────────────────────────────────────────
 void Game::loadAudio() {
-    // Sounds are optional — game works fine without them
+
     audioReady = false;
     if (FileExists("assets/sounds/gunshot.wav")) {
         sfxGunshot   = LoadSound("assets/sounds/gunshot.wav");
@@ -61,6 +65,27 @@ void Game::loadAudio() {
         musicAmbient = LoadMusicStream("assets/music/ambient.mp3");
 }
 
+// Load cutscene images
+void Game::loadCutsceneImages() {
+cutsceneImagesLoaded = false;
+const char* paths[5] = {
+    "assets/cutscene/slide_0.png",
+    "assets/cutscene/slide_1.png",
+    "assets/cutscene/slide_2.png",
+    "assets/cutscene/slide_3.png",
+    "assets/cutscene/slide_4.png",
+};
+cutsceneImagesLoaded = true;
+for (int i = 0; i < 5; i++) {
+    if (FileExists(paths[i]))
+        cutsceneImages[i] = LoadTexture(paths[i]);
+    else {
+        cutsceneImages[i] = Texture2D{};
+        cutsceneImagesLoaded = false;
+    }
+}
+}
+
 void Game::unloadAudio() {
     if (audioReady) {
         UnloadSound(sfxGunshot);
@@ -68,7 +93,7 @@ void Game::unloadAudio() {
         UnloadSound(sfxPlayerHurt);
         UnloadSound(sfxDoor);
     }
-    if (IsMusicReady(musicAmbient))
+    if (IsMusicValid(musicAmbient))
         UnloadMusicStream(musicAmbient);
 }
 
@@ -85,6 +110,7 @@ void Game::init() {
 
     player        = new Player(1.5f, 1.5f);
     renderer      = new Renderer(SW, SH);
+    loadCutsceneImages();
     cameraMode    = Renderer::Mode::FPP;
     damageCooldown = 0;
     hurtFlash     = 0;
@@ -144,13 +170,42 @@ for (auto& s : spawns) {
 void Game::update() {
     switch (state) {
         case GameState::TITLE:
-            if (IsKeyPressed(KEY_ENTER) || IsKeyPressed(KEY_SPACE)) {
-                currentLevel = 1;
+            updateMenu();
+            break;
+
+        case GameState::HOW_TO_PLAY:
+            if (IsKeyPressed(KEY_ESCAPE) || IsKeyPressed(KEY_ENTER) ||
+                IsKeyPressed(KEY_SPACE)  || IsKeyPressed(KEY_BACKSPACE)) {
+                state = GameState::TITLE;
+                menuAnimTimer = 0.0f;
+            }
+            break;
+
+        case GameState::CUTSCENE: {
+            cutsceneTimer += GetFrameTime();
+            const int TOTAL_SLIDES = 5;
+            // Brief lock-out so the menu's ENTER press doesn't skip the first slide
+            if (cutsceneTimer > 0.4f &&
+                (IsKeyPressed(KEY_ENTER) || IsKeyPressed(KEY_SPACE))) {
+                cutsceneSlide++;
+                cutsceneTimer = 0.0f;
+                if (cutsceneSlide >= TOTAL_SLIDES) {
+                    currentLevel = 1;
+                    init();
+                    state = GameState::PLAYING;
+                    DisableCursor();
+                }
+            }
+            if (IsKeyPressed(KEY_ESCAPE)) {
+                cutsceneSlide = 0;
+                cutsceneTimer = 0.0f;
+                currentLevel  = 1;
                 init();
                 state = GameState::PLAYING;
                 DisableCursor();
             }
             break;
+        }
 
         case GameState::PLAYING:
             updatePlaying();
@@ -179,6 +234,8 @@ void Game::update() {
             }
             if (IsKeyPressed(KEY_ESCAPE)) {
                 state = GameState::TITLE;
+                menuSelection = 0;
+                menuAnimTimer = 0.0f;
                 EnableCursor();
             }
             break;
@@ -190,6 +247,12 @@ void Game::update() {
                 state = GameState::PLAYING;
                 DisableCursor();
             }
+            if (IsKeyPressed(KEY_ESCAPE)) {
+                state = GameState::TITLE;
+                menuSelection = 0;
+                menuAnimTimer = 0.0f;
+                EnableCursor();
+            }
             break;
     }
 }
@@ -197,12 +260,6 @@ void Game::update() {
     
 // ─── updatePlaying ────────────────────────────────────────────────────────────
 void Game::updatePlaying() {
-
-    // temp debug
-    int alive = 0;
-    for (Enemy* e : enemies) if (e->isAlive()) alive++;
-    printf("alive: %d  state: %d\n", alive, (int)state);
-    fflush(stdout);
 
     // TAB → toggle minimap
     if (IsKeyPressed(KEY_TAB))
@@ -294,7 +351,15 @@ void Game::draw() {
 
     switch (state) {
         case GameState::TITLE:
-            drawTitle();
+            drawMenu();
+            break;
+
+        case GameState::HOW_TO_PLAY:
+            drawHowToPlay();
+            break;
+
+        case GameState::CUTSCENE:
+            drawCutscene();
             break;
 
         case GameState::PLAYING:
@@ -320,33 +385,307 @@ void Game::draw() {
     EndDrawing();
 }
 
-// ─── drawTitle ────────────────────────────────────────────────────────────────
-void Game::drawTitle() {
-    ClearBackground({ 5, 4, 4, 255 });
+// ─── updateMenu ──────────────────────────────────────────────────────────────
+void Game::updateMenu() {
+    menuAnimTimer += GetFrameTime();
 
-    // Draw a simple atmospheric grid in the bg
-    for (int x = 0; x < SW; x += 32)
-        DrawLine(x, 0, x, SH, { 18, 14, 14, 255 });
-    for (int y = 0; y < SH; y += 32)
-        DrawLine(0, y, SW, y, { 18, 14, 14, 255 });
+    if (IsKeyPressed(KEY_UP)   || IsKeyPressed(KEY_W))
+        menuSelection = (menuSelection + 2) % 3;
+    if (IsKeyPressed(KEY_DOWN) || IsKeyPressed(KEY_S))
+        menuSelection = (menuSelection + 1) % 3;
 
-    const char* title = "SHADOW BREACH";
-    int tw = MeasureText(title, 72);
-    DrawText(title, SW/2 - tw/2, SH/2 - 100, 72, { 185, 25, 25, 255 });
+    // Mouse hover
+    const int itemY[3] = { SH/2 + 20, SH/2 + 80, SH/2 + 140 };
+    Vector2 mouse = GetMousePosition();
+    for (int i = 0; i < 3; i++)
+        if (mouse.y >= itemY[i] - 4 && mouse.y < itemY[i] + 46)
+            menuSelection = i;
 
-    const char* sub = "A horror raycasting game";
-    int sw2 = MeasureText(sub, 20);
-    DrawText(sub, SW/2 - sw2/2, SH/2 - 14, 20, { 70, 55, 55, 255 });
+    if (IsKeyPressed(KEY_ENTER) || IsKeyPressed(KEY_SPACE) ||
+        IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+        switch (menuSelection) {
+            case 0:
+                cutsceneSlide = 0;
+                cutsceneTimer = 0.0f;
+                state = GameState::CUTSCENE;
+                break;
+            case 1:
+                state = GameState::HOW_TO_PLAY;
+                break;
+            case 2:
+                CloseWindow();
+                break;
+        }
+    }
+}
 
-    const char* prompt = "PRESS ENTER TO BEGIN";
-    int pw = MeasureText(prompt, 22);
-    int pulse = (int)(sinf(GetTime() * 3.0f) * 30 + 180);
-    DrawText(prompt, SW/2 - pw/2, SH/2 + 60, 22,
-             { (unsigned char)pulse, (unsigned char)(pulse/6), (unsigned char)(pulse/6), 255 });
+// ─── drawMenu ────────────────────────────────────────────────────────────────
+void Game::drawMenu() {
+    ClearBackground({ 4, 3, 3, 255 });
 
-    const char* ctrl = "WASD / ARROWS move   MOUSE look   SPACE / LMB shoot   TAB minimap";
-    int cw = MeasureText(ctrl, 13);
-    DrawText(ctrl, SW/2 - cw/2, SH - 36, 13, { 40, 35, 35, 255 });
+    // Atmospheric grid
+    for (int x = 0; x < SW; x += 40)
+        DrawLine(x, 0, x, SH, { 14, 10, 10, 255 });
+    for (int y = 0; y < SH; y += 40)
+        DrawLine(0, y, SW, y, { 14, 10, 10, 255 });
+
+    // Vignette
+    for (int i = 0; i < 120; i++) {
+        unsigned char a = (unsigned char)(((120 - i) / 120.0f) * 160);
+        DrawRectangle(0,      i,      SW, 1, { 0, 0, 0, a });
+        DrawRectangle(0, SH-1-i,      SW, 1, { 0, 0, 0, a });
+        DrawRectangle(     i, 0, 1, SH, { 0, 0, 0, a });
+        DrawRectangle(SW-1-i, 0, 1, SH, { 0, 0, 0, a });
+    }
+
+    // Title
+    float titlePulse = sinf(GetTime() * 1.2f) * 12 + 200;
+    const char* title = "BLOOD SECTOR";
+    int titleSize = SW > 1200 ? 88 : 72;
+    int tw = MeasureText(title, titleSize);
+    DrawText(title, SW/2 - tw/2 + 4, SH/2 - 190 + 4, titleSize, { 80, 0, 0, 120 });
+    DrawText(title, SW/2 - tw/2,     SH/2 - 190,     titleSize,
+             { (unsigned char)titlePulse, 18, 18, 255 });
+
+    const char* sub = "A Game by CODE BROKERS";
+    int sw2 = MeasureText(sub, 28);
+    DrawText(sub, SW/2 - sw2/2, SH/2 - 90, 30, { 55, 40, 40, 255 });
+
+    DrawRectangle(SW/2 - 140, SH/2 - 60, 280, 1, { 60, 20, 20, 200 });
+
+    // Menu items
+    const char* labels[3] = { "START GAME", "HOW TO PLAY", "EXIT GAME" };
+    const int   itemY[3]  = { SH/2 + 20,   SH/2 + 80,    SH/2 + 140 };
+    const int   itemSize  = 32;
+
+    for (int i = 0; i < 3; i++) {
+        bool selected = (menuSelection == i);
+        int  lw       = MeasureText(labels[i], itemSize);
+
+        if (selected) {
+            float barPulse = sinf(GetTime() * 5.0f) * 0.1f + 0.9f;
+            unsigned char ba = (unsigned char)(barPulse * 55);
+            DrawRectangle(SW/2 - 160, itemY[i] - 6, 320, itemSize + 10,
+                          { 120, 20, 20, ba });
+            DrawRectangleLines(SW/2 - 160, itemY[i] - 6, 320, itemSize + 10,
+                               { 185, 30, 30, 180 });
+
+            DrawText(">", SW/2 - 150, itemY[i], itemSize, { 200, 40, 40, 255 });
+            DrawText("<", SW/2 + 150 - MeasureText("<", itemSize),
+                     itemY[i], itemSize, { 200, 40, 40, 255 });
+
+            float lp = sinf(GetTime() * 6.0f) * 20 + 220;
+            DrawText(labels[i], SW/2 - lw/2, itemY[i], itemSize,
+                     { (unsigned char)lp, 30, 30, 255 });
+        } else {
+            DrawText(labels[i], SW/2 - lw/2, itemY[i], itemSize,
+                     { 70, 50, 50, 200 });
+        }
+    }
+
+    const char* hint = "W/S or UP/DOWN to navigate    ENTER to select";
+    int hw = MeasureText(hint, 13);
+    DrawText(hint, SW/2 - hw/2, SH - 30, 13, { 35, 28, 28, 200 });
+
+    DrawText("v0.1  ALPHA", SW - 90, SH - 20, 11, { 30, 22, 22, 180 });
+}
+
+// ─── drawHowToPlay ───────────────────────────────────────────────────────────
+void Game::drawHowToPlay() {
+    ClearBackground({ 4, 3, 3, 255 });
+
+    for (int x = 0; x < SW; x += 40)
+        DrawLine(x, 0, x, SH, { 14, 10, 10, 255 });
+    for (int y = 0; y < SH; y += 40)
+        DrawLine(0, y, SW, y, { 14, 10, 10, 255 });
+
+    int panW = 620, panH = 460;
+    int panX = SW/2 - panW/2, panY = SH/2 - panH/2 - 10;
+    DrawRectangle(panX, panY, panW, panH, { 8, 5, 5, 230 });
+    DrawRectangleLines(panX,   panY,   panW,   panH,   { 80, 20, 20, 200 });
+    DrawRectangleLines(panX+2, panY+2, panW-4, panH-4, { 40, 12, 12, 120 });
+
+    const char* hdr = "HOW TO PLAY";
+    int hdrW = MeasureText(hdr, 36);
+    DrawText(hdr, SW/2 - hdrW/2, panY + 22, 36, { 185, 30, 30, 255 });
+    DrawRectangle(panX + 30, panY + 70, panW - 60, 1, { 60, 20, 20, 180 });
+
+    struct Row { const char* key; const char* action; };
+    Row rows[] = {
+        { "W / A / S / D",      "Move forward, strafe left, back, right" },
+        { "ARROW KEYS",         "Move (alternate)"                        },
+        { "MOUSE",              "Look left / right"                       },
+        { "LEFT CLICK / SPACE", "Shoot"                                   },
+        { "TAB",                "Toggle minimap"                          },
+        { "F11",                "Toggle fullscreen"                       },
+        { "ESC",                "Return to menu (game over screen)"       },
+        { "R",                  "Restart from level 1"                    },
+    };
+    int rowCount = sizeof(rows) / sizeof(rows[0]);
+    int startY   = panY + 90;
+    int rowH     = 36;
+
+    for (int i = 0; i < rowCount; i++) {
+        int ry = startY + i * rowH;
+        if (i % 2 == 0)
+            DrawRectangle(panX + 12, ry, panW - 24, rowH - 4, { 18, 10, 10, 120 });
+        DrawText(rows[i].key,    panX + 24,  ry + 8, 16, { 200, 140, 60, 255 });
+        DrawText(rows[i].action, panX + 240, ry + 8, 16, { 130, 100, 100, 255 });
+    }
+
+    DrawRectangle(panX + 30, panY + panH - 80, panW - 60, 1, { 60, 20, 20, 160 });
+
+    const char* obj = "OBJECTIVE:  Kill all enemies in each sector to advance.";
+    int ow = MeasureText(obj, 15);
+    DrawText(obj, SW/2 - ow/2, panY + panH - 65, 15, { 90, 130, 80, 255 });
+
+    const char* warn = "Watch your ammo. The deeper you go, the worse it gets.";
+    int ww = MeasureText(warn, 14);
+    DrawText(warn, SW/2 - ww/2, panY + panH - 44, 14, { 70, 55, 55, 230 });
+
+    float pulse = sinf(GetTime() * 3.0f) * 30 + 160;
+    const char* back = "[ PRESS ENTER or ESC TO RETURN ]";
+    int bw = MeasureText(back, 16);
+    DrawText(back, SW/2 - bw/2, panY + panH + 16, 16,
+             { (unsigned char)pulse, (unsigned char)(pulse/8),
+               (unsigned char)(pulse/8), 255 });
+}
+
+// ─── drawCutscene ────────────────────────────────────────────────────────────
+void Game::drawCutscene() {
+    struct Slide { const char* heading; const char* body[4]; int lines; };
+
+    static const Slide slides[] = {
+        {
+            "YEAR  2026",
+            {
+              "The OB1 Corporation built their research facility",
+              "underneath the Rawalpindi city.",
+              "Officially, it was a biotech lab working on medical advancements.",
+              "Unofficially, it was a front for experiments to find immortality.",
+            }, 4
+        },
+        {
+            "PROJECT  ITTEFAQ",
+            {
+                "In late 2026, something went very wrong in Facility 9.",
+                "A containment breach led to a rapid outbreak of a bioengineered pathogen.",
+                "The infected rapidly lost their humanity, becoming aggressive and violent.",
+                "The outbreak forced an immediate lockdown, trapping everyone inside.",
+            }, 4
+        },
+        {
+            "THREE  MONTHS  LATER",
+            {
+                "All communication with Facility 9 has been lost.",
+                "The government has no choice but to send in a covert operative.",
+                nullptr, nullptr
+            }, 2
+        },
+        {
+            "YOUR  ORDERS",
+            {
+              "You are Agent Ahmed Bilal.",
+              "Infiltrate Facility 9. Locate any surviving personnel.",
+              "Neutralize the biological outbreak at all costs.",
+              "Command will deny this mission ever existed."
+            }, 4
+        },
+        {
+            "ENTER  THE  BREACH",
+            {
+              "Trust your instincts. Conserve your ammunition.",
+              "Do not let them surround you.",
+              "Do not stop moving.",
+              nullptr
+            }, 3
+        },
+    };
+
+    const int TOTAL = 5;
+    int idx = (cutsceneSlide < TOTAL) ? cutsceneSlide : TOTAL - 1;
+
+    ClearBackground(BLACK);
+
+    // ── Draw image fullscreen ─────────────────────────────────────────────────
+    if (idx < 5 && cutsceneImages[idx].id > 0) {
+        // Scale image to fill screen maintaining aspect ratio
+        float imgW = (float)cutsceneImages[idx].width;
+        float imgH = (float)cutsceneImages[idx].height;
+        float scale = fmaxf((float)SW / imgW, (float)SH / imgH);
+        int drawW = (int)(imgW * scale);
+        int drawH = (int)(imgH * scale);
+        int drawX = (SW - drawW) / 2;
+        int drawY = (SH - drawH) / 2;
+        DrawTextureEx(cutsceneImages[idx],
+                      { (float)drawX, (float)drawY },
+                      0.0f, scale, WHITE);
+    } else {
+        // Fallback — dark background with scanlines
+        for (int y = 0; y < SH; y += 4)
+            DrawRectangle(0, y, SW, 1, { 6, 4, 4, 255 });
+    }
+
+    // ── Dark gradient at bottom for text readability ───────────────────────────
+    int gradH = SH / 3;
+    for (int i = 0; i < gradH; i++) {
+        unsigned char a = (unsigned char)(((float)(gradH - i) / gradH) * 220);
+        DrawRectangle(0, SH - gradH + i, SW, 1, { 0, 0, 0, 220 });
+    }
+
+    // ── Dark gradient at top for counter readability ──────────────────────────
+    for (int i = 0; i < 60; i++) {
+        unsigned char a = (unsigned char)(((float)(60 - i) / 60.0f) * 180);
+        DrawRectangle(0, i, SW, 1, { 0, 0, 0, a });
+    }
+
+    // ── Top UI ────────────────────────────────────────────────────────────────
+    const char* counter = TextFormat("%d / %d", idx + 1, TOTAL);
+    DrawText(counter, SW - MeasureText(counter, 20) - 24, 16, 20, { 50, 30, 30, 200 });
+    DrawText("ESC - SKIP ALL", 22, 16, 45, { 40, 28, 28, 180 });
+
+    // ── Heading (bottom area, above body text) ────────────────────────────────
+    int textAreaTop = SH - 220;
+
+    float hp = sinf(GetTime() * 1.5f) * 10 + 210;
+    int   hSize = 36;
+    const char* heading = slides[idx].heading;
+    int   hw2 = MeasureText(heading, hSize);
+    DrawText(heading, SW/2 - hw2/2, textAreaTop, hSize,
+             { (unsigned char)hp, 22, 22, 255 });
+
+    // Divider line under heading
+    DrawRectangle(SW/2 - 300, textAreaTop + hSize + 6, 600, 1, { 80, 20, 20, 180 });
+
+    // ── Body text lines with staggered fade-in ────────────────────────────────
+    int lineSize   = 25;
+    int lineGap    = 28;
+    int bodyStartY = textAreaTop + hSize + 18;
+
+    for (int l = 0; l < slides[idx].lines; l++) {
+        if (!slides[idx].body[l]) break;
+        float lineDelay = l * 0.22f;
+        float alpha01   = (cutsceneTimer - lineDelay) / 0.35f;
+        if (alpha01 < 0.0f) alpha01 = 0.0f;
+        if (alpha01 > 1.0f) alpha01 = 1.0f;
+        unsigned char a = (unsigned char)(alpha01 * 210);
+        int lw2 = MeasureText(slides[idx].body[l], lineSize);
+        DrawText(slides[idx].body[l], SW/2 - lw2/2,
+                 bodyStartY + l * lineGap, lineSize,
+                 { a, (unsigned char)(a * 0.78f), (unsigned char)(a * 0.78f), 255 });
+    }
+
+    // ── Advance prompt ────────────────────────────────────────────────────────
+    if (cutsceneTimer > 1.0f) {
+        float pulse = sinf(GetTime() * 3.5f) * 35 + 150;
+        const char* prompt = (idx < TOTAL - 1)
+                             ? "[ PRESS ENTER TO CONTINUE ]"
+                             : "[ PRESS ENTER TO BEGIN ]";
+        int pw = MeasureText(prompt, 15);
+        DrawText(prompt, SW/2 - pw/2, SH - 28, 15,
+                 { (unsigned char)pulse, (unsigned char)(pulse/8),
+                   (unsigned char)(pulse/8), 255 });
+    }
 }
 
 // ─── drawPlaying ─────────────────────────────────────────────────────────────
@@ -514,6 +853,8 @@ void Game::drawVictory() {
 
 // ─── cleanup ─────────────────────────────────────────────────────────────────
 void Game::cleanup() {
+    for (int i = 0; i < 5; i++)
+    if (cutsceneImages[i].id > 0) UnloadTexture(cutsceneImages[i]);
     delete player;   player   = nullptr;
     delete renderer; renderer = nullptr;
     for (Enemy* e : enemies) delete e;
