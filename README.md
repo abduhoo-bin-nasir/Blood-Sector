@@ -1,145 +1,176 @@
 # 🩸 Blood Sector
 
-A first-person horror raycasting game built in C++ with Raylib.  
-Inspired by classic Doom-era FPS games — no engine, no shortcuts, just raw raycasting math and OOP.
+A retro-inspired first-person horror shooter built in **C++** using **Raylib** and classic **raycasting techniques**.
 
-![C++](https://img.shields.io/badge/C++-17-blue?style=flat-square&logo=cplusplus)
+Inspired by early FPS games like Doom, Blood Sector renders a pseudo-3D world entirely through custom raycasting without using a game engine.
+
+![C++](https://img.shields.io/badge/C++-17-blue?style=flat-square\&logo=cplusplus)
 ![Raylib](https://img.shields.io/badge/Raylib-5.x-red?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Mac-lightgrey?style=flat-square)
 
 ---
 
-## 🎮 Gameplay
+## 📸 Screenshots
 
-You are trapped inside a breached facility. Four sectors. No way out except through.
+<p align="center">
+  <img src="assets/screenshots/gameplay1.png" width="700" alt="Gameplay Screenshot">
+</p>
 
-- Shoot enemies before they reach you
-- Watch your ammo — a drop spawns on the map when you run out
-- Reach the next sector by killing every enemy
-- Survive the boss in Sector 4
+<p align="center">
+  <img src="assets/screenshots/gameplay2.png" width="700" alt="Gameplay Screenshot">
+</p>
+
+---
+
+## 🎮 Features
+
+* Classic Doom-style raycast rendering
+* Multiple enemy types with unique AI behaviors
+* Progressive multi-level campaign
+* Boss battle finale
+* Dynamic sprite rendering
+* Minimap system
+* Ammo pickups and resource management
+* Sound effects and background music
+* Cross-platform CMake build system
 
 ---
 
 ## 👾 Enemy Types
 
-| Enemy | HP | Behaviour |
-|---|---|---|
-| **Walker** | 3 | Patrols randomly, chases on sight, attacks in melee |
-| **Stalker** | 5 | Freezes completely when you look at it — rushes the moment you look away |
-| **Boss** | 20 | Slow stalker that winds up a charge lunge. Spawns additional Walkers mid-fight |
+| Enemy   | Health | Behavior                           |
+| ------- | ------ | ---------------------------------- |
+| Walker  | 3 HP   | Random patrol, chase, melee attack |
+| Stalker | 5 HP   | Moves only when not being observed |
+| Boss    | 20 HP  | Charge attacks and summons Walkers |
 
 ---
 
 ## 🗺️ Levels
 
-| Sector | Layout | Theme |
-|---|---|---|
-| 1 — The Breach | Open chaotic rooms | Tutorial — learn the enemies |
-| 2 — The Corridor | Two rooms + connecting corridor | Ambushes in tight spaces |
-| 3 — The Labyrinth | Zigzag snake path | No room to run |
-| 4 — The Core | Large open arena | Boss fight |
+| Sector        | Description                        |
+| ------------- | ---------------------------------- |
+| The Breach    | Introduction to core mechanics     |
+| The Corridor  | Tight spaces and ambush encounters |
+| The Labyrinth | Maze-like navigation challenge     |
+| The Core      | Final boss arena                   |
 
 ---
 
-## 🕹️ Controls
+## 🎯 Controls
 
-| Key | Action |
-|---|---|
-| `W A S D` | Move |
-| `Mouse` | Look |
-| `Arrow Keys` | Look (alternative) |
-| `Left Click` / `Space` | Shoot |
-| `TAB` | Toggle minimap |
-| `R` | Restart |
-| `ESC` | Quit |
+| Key                | Action         |
+| ------------------ | -------------- |
+| W A S D            | Move           |
+| Mouse              | Look Around    |
+| Left Click / Space | Shoot          |
+| TAB                | Toggle Minimap |
+| R                  | Restart Level  |
+| ESC                | Exit Game      |
 
 ---
 
-## 🔧 Building from Source
+## 🔧 Building
 
-### Prerequisites
-- g++ with C++17 support (MinGW-w64 on Windows)
-- CMake 3.15+
-- [Raylib](https://github.com/raysan5/raylib/releases) installed
+### Requirements
 
-### Steps
+* C++17 compatible compiler
+* CMake 3.15+
+
+### Clone Repository
 
 ```bash
-# Clone the repo
 git clone https://github.com/yourusername/blood-sector.git
 cd blood-sector
+```
 
-# Configure
-cmake -B build -G "MinGW Makefiles"   # Windows
-cmake -B build                         # Linux / Mac
+### Configure
 
-# Build
+Windows (MinGW)
+
+```bash
+cmake -B build -G "MinGW Makefiles"
+```
+
+Linux / macOS
+
+```bash
+cmake -B build
+```
+
+### Build
+
+```bash
 cmake --build build
-
-# Run
-./build/BloodSector.exe   # Windows
-./build/BloodSector        # Linux / Mac
 ```
 
-> **Note:** Copy the `assets/` folder next to the executable after building, otherwise sprites and audio will not load.
+### Run
+
+Windows
+
+```bash
+./build/Blood-Sector.exe
+```
+
+Linux / macOS
+
+```bash
+./build/Blood-Sector
+```
+
+> Note: Copy the `assets/` folder into the build directory before running the executable.
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-```
+```text
 blood-sector/
+│
 ├── src/
-│   ├── main.cpp           Entry point
-│   ├── Entity.h/.cpp      Abstract base class — position, health, collision
-│   ├── Map.h/.cpp         Tile grid, wall queries
-│   ├── Player.h/.cpp      Input handling, raycasting vectors, hitscan shooting
-│   ├── Enemy.h/.cpp       Enemy base class + Walker + Stalker + Boss
-│   ├── Renderer.h/.cpp    DDA raycasting, sprite projection, HUD, minimap
-│   ├── Game.h/.cpp        Game loop, state machine, level transitions
-│   └── LevelManager.h/.cpp  Level layouts, spawn tables, level metadata
+│   ├── main.cpp
+│   ├── Game.h / Game.cpp
+│   ├── Renderer.h / Renderer.cpp
+│   ├── Player.h / Player.cpp
+│   ├── Enemy.h / Enemy.cpp
+│   ├── Entity.h / Entity.cpp
+│   ├── Map.h / Map.cpp
+│   └── LevelManager.h / LevelManager.cpp
+│
 ├── assets/
-│   ├── sprites/           PNG sprite sheets (place next to exe)
-│   ├── sounds/            WAV sound effects (optional)
-│   └── music/             MP3 ambient track (optional)
-└── CMakeLists.txt
+│   ├── sprites/
+│   ├── sounds/
+│   └── music/
+│
+├── screenshots/
+├── CMakeLists.txt
+├── README.md
+└── BUILD.md
 ```
 
 ---
 
-## 🧱 OOP Architecture
+## 🧠 Technical Highlights
 
-The project demonstrates core Object-Oriented Programming concepts:
-
-**Inheritance**  
-`Player` and `Enemy` both inherit from `Entity` (shared position, health, collision).  
-`Walker`, `Stalker`, and `Boss` all inherit from `Enemy`.
-
-**Polymorphism**  
-Enemies are stored as `vector<Enemy*>`. Calling `e->behavior()` automatically dispatches to the correct subclass at runtime — no type checking needed.
-
-**Abstraction**  
-`Entity` and `Enemy` are abstract classes with pure virtual methods. You cannot instantiate them directly — only their concrete subclasses.
-
-**Encapsulation**  
-`Map`'s grid array is private. `Player`'s cooldown timers are private. All access goes through clean public methods.
-
-**Separation of Concerns**  
-`Renderer` knows nothing about game logic. `Game` never calls `DrawRectangle`. `LevelManager` only knows about levels. Each class has one job.
+* Object-Oriented Design
+* Inheritance & Polymorphism
+* Dynamic Enemy Management
+* DDA Raycasting Algorithm
+* Sprite Projection Rendering
+* Collision Detection System
+* State-Based Game Architecture
 
 ---
 
-## 🎨 Assets
+## 🛠 Technologies Used
 
-Audio and sprites are optional — the game runs fully without them using procedural rendering and silence as fallbacks.
-
-Free asset sources used:
-- [freesound.org](https://freesound.org) — sound effects
-- [Piskel](https://piskel.com) — pixel art sprites
-- [incompetech.com](https://incompetech.com) — ambient music
+* C++
+* Raylib
+* CMake
+* Object-Oriented Programming
 
 ---
 
 ## 📜 License
 
-MIT License — free to use, modify, and distribute.
+This project is licensed under the MIT License.
