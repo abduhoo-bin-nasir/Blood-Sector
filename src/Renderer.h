@@ -40,7 +40,7 @@ private:
     Texture2D texGunFire;
 
     static const int FLOOR_TEX_COUNT   = 3;
-    static const int CEILING_TEX_COUNT = 2;
+    static const int CEILING_TEX_COUNT = 4;
     Texture2D texFloor[FLOOR_TEX_COUNT];
     Texture2D texCeiling[CEILING_TEX_COUNT];
 

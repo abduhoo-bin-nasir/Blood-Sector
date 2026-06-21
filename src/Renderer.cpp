@@ -34,6 +34,8 @@ Renderer::Renderer(int screenW, int screenH)
     texFloor[2]   = safeLoad("assets/sprites/floor_3.png");
     texCeiling[0] = safeLoad("assets/sprites/ceiling_1.png");
     texCeiling[1] = safeLoad("assets/sprites/ceiling_2.png");
+    texCeiling[2] = safeLoad("assets/sprites/ceiling_3.png");
+    texCeiling[3] = safeLoad("assets/sprites/ceiling_4.png");
 }
 
 Renderer::~Renderer() {
