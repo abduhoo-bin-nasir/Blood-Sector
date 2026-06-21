@@ -1,8 +1,0 @@
-# ninja log v7
-39	1468	8021241968478157	CMakeFiles/Blood-Sector.dir/src/Entity.cpp.obj	251a26e057fe724
-43	1611	8021241968528169	CMakeFiles/Blood-Sector.dir/src/Map.cpp.obj	a0b1b1920b20d8db
-49	2451	8021241968618162	CMakeFiles/Blood-Sector.dir/src/Player.cpp.obj	7f77dceeb9f717d2
-64	2503	8021241968728160	CMakeFiles/Blood-Sector.dir/src/Enemy.cpp.obj	9ac75cc6b6d9bb7d
-34	2539	8021241968438116	CMakeFiles/Blood-Sector.dir/src/main.cpp.obj	992a5103d43b7a81
-1611	2730	8021241984205923	CMakeFiles/Blood-Sector.dir/src/LevelManager.cpp.obj	5e838470dd9485f4
-68	2791	8021241968858152	CMakeFiles/Blood-Sector.dir/src/Renderer.cpp.obj	e955c2df7f305c4a

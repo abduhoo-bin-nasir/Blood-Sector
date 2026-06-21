@@ -39,8 +39,12 @@ private:
     Texture2D texGunIdle;
     Texture2D texGunFire;
 
-    
-    int       animFrame;   // ticks up each frame for walk animation
+    static const int FLOOR_TEX_COUNT   = 3;
+    static const int CEILING_TEX_COUNT = 2;
+    Texture2D texFloor[FLOOR_TEX_COUNT];
+    Texture2D texCeiling[CEILING_TEX_COUNT];
+
+    int       animFrame;
     int    sw, sh;
     float* zBuffer;
 

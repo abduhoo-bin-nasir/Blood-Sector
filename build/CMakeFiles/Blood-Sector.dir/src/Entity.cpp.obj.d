@@ -1,6 +1,6 @@
 CMakeFiles/Blood-Sector.dir/src/Entity.cpp.obj: \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Entity.cpp \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Entity.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\blood\ sector\ repo\src\Entity.cpp \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\blood\ sector\ repo\src\Entity.h \
  C:/raylib/include/raylib.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  C:/msys64/mingw64/include/stdarg.h \
@@ -9,7 +9,7 @@ CMakeFiles/Blood-Sector.dir/src/Entity.cpp.obj: \
  C:/msys64/mingw64/include/_mingw_mac.h \
  C:/msys64/mingw64/include/_mingw_secapi.h \
  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Map.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\blood\ sector\ repo\src\Map.h \
  C:/msys64/mingw64/include/c++/15.2.0/vector \
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \

@@ -35,11 +35,11 @@ void Game::run() {
     loadAudio();
     init();
 
-    if (audioReady && IsMusicValid(musicAmbient))
+    if (audioReady && IsMusicReady(musicAmbient))
         PlayMusicStream(musicAmbient);
 
     while (!WindowShouldClose()) {
-        if (audioReady && IsMusicValid(musicAmbient))
+        if (audioReady && IsMusicReady(musicAmbient))
             UpdateMusicStream(musicAmbient);
         update();
         draw();
@@ -93,7 +93,7 @@ void Game::unloadAudio() {
         UnloadSound(sfxPlayerHurt);
         UnloadSound(sfxDoor);
     }
-    if (IsMusicValid(musicAmbient))
+    if (IsMusicReady(musicAmbient))
         UnloadMusicStream(musicAmbient);
 }
 

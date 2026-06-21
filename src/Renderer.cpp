@@ -28,20 +28,31 @@ Renderer::Renderer(int screenW, int screenH)
     texBoss[1]    = safeLoad("assets/sprites/boss_charge.png");
     texGunIdle    = safeLoad("assets/sprites/gun_idle.png");
     texGunFire    = safeLoad("assets/sprites/gun fire.png");
+
+    texFloor[0]   = safeLoad("assets/sprites/floor_1.png");
+    texFloor[1]   = safeLoad("assets/sprites/floor_2.png");
+    texFloor[2]   = safeLoad("assets/sprites/floor_3.png");
+    texCeiling[0] = safeLoad("assets/sprites/ceiling_1.png");
+    texCeiling[1] = safeLoad("assets/sprites/ceiling_2.png");
 }
 
 Renderer::~Renderer() {
     delete[] zBuffer;
     for (int i = 0; i < 2; i++) {
-        if (texWallStone.id > 0) UnloadTexture(texWallStone);
-        if (texWallMetal.id > 0) UnloadTexture(texWallMetal);
-        if (texWallBlood.id > 0) UnloadTexture(texWallBlood);
         if (texWalker[i].id  > 0) UnloadTexture(texWalker[i]);
         if (texStalker[i].id > 0) UnloadTexture(texStalker[i]);
         if (texBoss[i].id    > 0) UnloadTexture(texBoss[i]);
     }
-    if (texGunIdle.id > 0) UnloadTexture(texGunIdle);
-    if (texGunFire.id > 0) UnloadTexture(texGunFire);
+    if (texWallStone.id > 0) UnloadTexture(texWallStone);
+    if (texWallMetal.id > 0) UnloadTexture(texWallMetal);
+    if (texWallBlood.id > 0) UnloadTexture(texWallBlood);
+    if (texGunIdle.id > 0)   UnloadTexture(texGunIdle);
+    if (texGunFire.id > 0)   UnloadTexture(texGunFire);
+
+    for (int i = 0; i < FLOOR_TEX_COUNT; i++)
+        if (texFloor[i].id > 0) UnloadTexture(texFloor[i]);
+    for (int i = 0; i < CEILING_TEX_COUNT; i++)
+        if (texCeiling[i].id > 0) UnloadTexture(texCeiling[i]);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -52,7 +63,7 @@ void Renderer::drawScene(const Map& map, const Player& player,
     else                   renderTPP(map, player, enemies);
 }
 
-// FPP — First Person Perspective 
+// FPP — First Person Perspective
 void Renderer::renderFPP(const Map& map, const Player& player,
                           const std::vector<Enemy*>& enemies)
 {
@@ -60,24 +71,17 @@ void Renderer::renderFPP(const Map& map, const Player& player,
     drawSprites(player, enemies);
 }
 
-//                          DDA Raycasting 
-// For each screen column we cast a ray using the DDA grid traversal algorithm.
-// DDA finds the exact tile the ray hits without checking every pixel on the ray.
-//
 
 void Renderer::castWalls(const Map& map, const Player& player) {
-    // Solid ceiling and floor (drawn first; walls rendered on top)
-    DrawRectangle(0, 0,    sw, sh/2, {  10,  8,  8, 255 }); // ceiling
-    DrawRectangle(0, sh/2, sw, sh/2, {  22, 16, 13, 255 }); // floor
-
     float dirX   = player.getDirX();
     float dirY   = player.getDirY();
     float planeX = player.getPlaneX();
     float planeY = player.getPlaneY();
 
-    for (int col = 0; col < sw; col++) {
+    const int RAY_STEP = 2; // cast every 2nd column — halves total ray work
 
-        // Camera-space X: -1 (left edge) to +1 (right edge)
+    for (int col = 0; col < sw; col += RAY_STEP) {
+
         float camX = 2.0f * col / (float)sw - 1.0f;
 
         float rayDX = dirX + planeX * camX;
@@ -86,11 +90,9 @@ void Renderer::castWalls(const Map& map, const Player& player) {
         int tileX = (int)player.x;
         int tileY = (int)player.y;
 
-        // Distance the ray travels per unit in X/Y directions
         float ddx = (rayDX == 0.0f) ? 1e30f : fabsf(1.0f / rayDX);
         float ddy = (rayDY == 0.0f) ? 1e30f : fabsf(1.0f / rayDY);
 
-        // Step direction (+1 or -1) and initial side distances
         int   stepX, stepY;
         float sideDX, sideDY;
 
@@ -100,14 +102,11 @@ void Renderer::castWalls(const Map& map, const Player& player) {
         if (rayDY < 0.0f) { stepY = -1; sideDY = (player.y - tileY) * ddy; }
         else               { stepY =  1; sideDY = (tileY + 1.0f - player.y) * ddy; }
 
-        // ── DDA loop ─────────────────────────────────────────────────────────
-        // Step through grid cells until we hit a wall
         bool hit      = false;
-        int  side     = 0; // 0 = hit X-face (N/S wall), 1 = hit Y-face (E/W wall)
+        int  side     = 0;
         int  wallType = 1;
 
         for (int iter = 0; iter < 64 && !hit; iter++) {
-            // Step to whichever next grid line is closer
             if (sideDX < sideDY) {
                 sideDX += ddx; tileX += stepX; side = 0;
             } else {
@@ -119,35 +118,103 @@ void Renderer::castWalls(const Map& map, const Player& player) {
             }
         }
 
-        // Perpendicular distance — avoids fisheye by NOT using Euclidean distance
         float perpDist = (side == 0) ? (sideDX - ddx) : (sideDY - ddy);
         if (perpDist < 0.001f) perpDist = 0.001f;
-        zBuffer[col] = perpDist; // store for sprite clipping later
 
-        // Wall height on screen: further away = shorter column
+        // Fill zBuffer for this column AND the next RAY_STEP-1 columns
+        // (sprites still need per-column depth even though we skip rays)
+        for (int fz = 0; fz < RAY_STEP && (col + fz) < sw; fz++)
+            zBuffer[col + fz] = perpDist;
+
         int wallH   = (int)((float)sh / perpDist);
         int drawTop = sh/2 - wallH/2;  if (drawTop < 0)   drawTop = 0;
         int drawBot = sh/2 + wallH/2;  if (drawBot >= sh)  drawBot = sh-1;
 
-        // Pick texture based on wall type
+        // ── Floor — distance-based LOD blocks, drawn RAY_STEP wide ──────────
+        int y = drawBot + 1;
+        while (y < sh) {
+            float rowDist = (float)sh / (float)(2 * y - sh);
+            int blockSize = 1 + (int)(rowDist * 1.3f);
+            if (blockSize > 10) blockSize = 10;
+
+            float wx = player.x + rowDist * rayDX;
+            float wy = player.y + rowDist * rayDY;
+            int tx = (int)floorf(wx);
+            int ty = (int)floorf(wy);
+            int variant = ((tx*7+ty*13) % FLOOR_TEX_COUNT + FLOOR_TEX_COUNT) % FLOOR_TEX_COUNT;
+            Texture2D& ftex = texFloor[variant];
+
+            float fog = 1.0f / (1.0f + rowDist * 0.28f);
+            if (fog < 0.10f) fog = 0.10f;
+            unsigned char f = (unsigned char)(fog * 255);
+
+            if (ftex.id > 0) {
+                float fracX = wx - floorf(wx);
+                float fracY = wy - floorf(wy);
+                int texX = (int)(fracX * ftex.width);
+                int texY = (int)(fracY * ftex.height);
+                if (texX >= ftex.width)  texX = ftex.width  - 1;
+                if (texY >= ftex.height) texY = ftex.height - 1;
+                Rectangle src  = { (float)texX, (float)texY, 1, 1 };
+                Rectangle dest = { (float)col, (float)y, (float)RAY_STEP, (float)blockSize };
+                DrawTexturePro(ftex, src, dest, {0,0}, 0.0f, { f, f, f, 255 });
+            } else {
+                DrawRectangle(col, y, RAY_STEP, blockSize,
+                    { f, (unsigned char)(f*0.9f), (unsigned char)(f*0.8f), 255 });
+            }
+            y += blockSize;
+        }
+
+        // ── Ceiling — same LOD approach ──────────────────────────────────────
+        int cy = 0;
+        while (cy < drawTop) {
+            float rowDist = (float)sh / (float)(sh - 2 * cy);
+            int blockSize = 1 + (int)(rowDist * 1.3f);
+            if (blockSize > 10) blockSize = 10;
+
+            float wx = player.x + rowDist * rayDX;
+            float wy = player.y + rowDist * rayDY;
+            int tx = (int)floorf(wx);
+            int ty = (int)floorf(wy);
+            int variant = ((tx+ty) % CEILING_TEX_COUNT + CEILING_TEX_COUNT) % CEILING_TEX_COUNT;
+            Texture2D& ctex = texCeiling[variant];
+
+            float fog = 1.0f / (1.0f + rowDist * 0.28f);
+            if (fog < 0.08f) fog = 0.08f;
+            unsigned char f = (unsigned char)(fog * 255);
+
+            if (ctex.id > 0) {
+                float fracX = wx - floorf(wx);
+                float fracY = wy - floorf(wy);
+                int texX = (int)(fracX * ctex.width);
+                int texY = (int)(fracY * ctex.height);
+                if (texX >= ctex.width)  texX = ctex.width  - 1;
+                if (texY >= ctex.height) texY = ctex.height - 1;
+                Rectangle src  = { (float)texX, (float)texY, 1, 1 };
+                Rectangle dest = { (float)col, (float)cy, (float)RAY_STEP, (float)blockSize };
+                DrawTexturePro(ctex, src, dest, {0,0}, 0.0f, { f, f, f, 255 });
+            } else {
+                DrawRectangle(col, cy, RAY_STEP, blockSize, { f, f, f, 255 });
+            }
+            cy += blockSize;
+        }
+
+        // ── Wall strip — drawn RAY_STEP wide ─────────────────────────────────
         Texture2D* wallTex = nullptr;
         if      (wallType == 2 && texWallMetal.id > 0) wallTex = &texWallMetal;
         else if (wallType == 3 && texWallBlood.id > 0) wallTex = &texWallBlood;
         else if (texWallStone.id > 0)                  wallTex = &texWallStone;
 
         if (wallTex != nullptr) {
-            // Calculate texture X coordinate from where ray hit the wall
             float wallX;
             if (side == 0) wallX = player.y + perpDist * rayDY;
             else            wallX = player.x + perpDist * rayDX;
-            wallX -= floorf(wallX);  // fractional part only (0.0 to 1.0)
+            wallX -= floorf(wallX);
 
             int texX = (int)(wallX * wallTex->width);
             if (texX >= wallTex->width) texX = wallTex->width - 1;
 
-            // Dark side shading
             float shade = (side == 1) ? 0.6f : 1.0f;
-            // Distance fog
             float fog = 1.0f / (1.0f + perpDist * 0.28f);
             if (fog < 0.12f) fog = 0.12f;
             shade *= fog;
@@ -155,20 +222,15 @@ void Renderer::castWalls(const Map& map, const Player& player) {
             Color col2 = { tint, tint, tint, 255 };
 
             Rectangle src  = { (float)texX, 0, 1, (float)wallTex->height };
-            Rectangle dest = { (float)col, (float)drawTop, 1, (float)(drawBot - drawTop) };
+            Rectangle dest = { (float)col, (float)drawTop, (float)RAY_STEP, (float)(drawBot - drawTop) };
             DrawTexturePro(*wallTex, src, dest, {0,0}, 0.0f, col2);
         } else {
             Color wallCol = getWallColor(wallType, side == 1, perpDist);
-            DrawRectangle(col, drawTop, 1, drawBot - drawTop, wallCol);
+            DrawRectangle(col, drawTop, RAY_STEP, drawBot - drawTop, wallCol);
         }
     }
 }
-
 // ─── Sprite projection ────────────────────────────────────────────────────────
-// Projects each enemy's world position to a 2D screen position.
-// Uses the inverse of the camera matrix (dir × plane vectors).
-//
-
 void Renderer::drawSprites(const Player& player,
                             const std::vector<Enemy*>& enemies)
 {
@@ -232,7 +294,6 @@ void Renderer::drawSprites(const Player& player,
         int xStart  = screenX - sprW/2;
         int xEnd    = screenX + sprW/2;
 
-        // Pick texture based on enemy type + walk frame
         int    frame  = (animFrame / 15) % 2;
         Texture2D tex = {};
         if      (dynamic_cast<Boss*>(e))    tex = texBoss[frame];
@@ -240,22 +301,26 @@ void Renderer::drawSprites(const Player& player,
         else                                tex = texWalker[frame];
 
         if (tex.id > 0) {
-            // Draw sprite texture column by column (respects zBuffer)
             float texW = (float)tex.width;
             float texH = (float)tex.height;
+
+            // Fog tint matches walls/floor — fixes "paper cutout" look
+            float fog = 1.0f / (1.0f + tY * 0.28f);
+            if (fog < 0.12f) fog = 0.12f;
+            unsigned char f = (unsigned char)(fog * 255);
+            Color fogTint = { f, f, f, 255 };
+
             for (int col = xStart; col < xEnd; col++) {
                 if (col < 0 || col >= sw) continue;
                 if (tY >= zBuffer[col]) continue;
                 float u = (float)(col - xStart) / (float)(xEnd - xStart);
                 int   srcX = (int)(u * texW);
                 if (srcX >= tex.width) srcX = tex.width - 1;
-                // Draw a 1-pixel-wide vertical strip of the texture
                 Rectangle src  = { (float)srcX, 0, 1, texH };
                 Rectangle dest = { (float)col, (float)yStart, 1, (float)(yEnd - yStart) };
-                DrawTexturePro(tex, src, dest, {0,0}, 0.0f, WHITE);
+                DrawTexturePro(tex, src, dest, {0,0}, 0.0f, fogTint);
             }
         } else {
-            // Fallback: coloured rectangle (original behaviour)
             Color bodyCol = e->getColor();
             Color headCol = { 185, 145, 115, 255 };
             int   headH   = (yEnd - yStart) / 5;
@@ -270,7 +335,7 @@ void Renderer::drawSprites(const Player& player,
         }
     }
 
-    // --- Gun overlay (bottom centre-right of screen) ---
+    // --- Gun overlay ---
     bool firing = player.isShooting();
     Texture2D& gunTex = firing ? texGunFire : texGunIdle;
     if (gunTex.id > 0) {
@@ -280,19 +345,17 @@ void Renderer::drawSprites(const Player& player,
     }
 }
 
-// TPP — Third Person / Top-Down view 
+// TPP — Third Person / Top-Down view
 void Renderer::renderTPP(const Map& map, const Player& player,
                           const std::vector<Enemy*>& enemies)
 {
     ClearBackground({ 8, 6, 5, 255 });
 
-    const int TP = 30; // pixels per tile
+    const int TP = 30;
 
-    // Camera offset so the player stays centred on screen
     float camX = player.x * TP - sw * 0.5f;
     float camY = player.y * TP - sh * 0.5f;
 
-    // Draw map tiles
     for (int ty = 0; ty < map.getHeight(); ty++) {
         for (int tx = 0; tx < map.getWidth(); tx++) {
             int sx = (int)(tx * TP - camX);
@@ -302,16 +365,15 @@ void Renderer::renderTPP(const Map& map, const Player& player,
             int   tile = map.getTile(tx, ty);
             Color col;
             switch (tile) {
-                case 1: col = {  62,  48, 42, 255 }; break; // stone
-                case 2: col = {  42,  56, 64, 255 }; break; // metal
-                case 3: col = {  62,  20, 20, 255 }; break; // blood
-                default:col = {  16,  12, 10, 255 }; break; // floor
+                case 1: col = {  62,  48, 42, 255 }; break;
+                case 2: col = {  42,  56, 64, 255 }; break;
+                case 3: col = {  62,  20, 20, 255 }; break;
+                default:col = {  16,  12, 10, 255 }; break;
             }
             DrawRectangle(sx, sy, TP-1, TP-1, col);
         }
     }
 
-    // Draw enemies
     for (Enemy* e : enemies) {
         if (!e->isAlive()) continue;
         int   ex = (int)(e->x * TP - camX);
@@ -319,22 +381,18 @@ void Renderer::renderTPP(const Map& map, const Player& player,
         float er = e->getRadius() * TP;
 
         DrawCircleV({ (float)ex, (float)ey }, er, e->getColor());
-        // Facing direction tick
         DrawLine(ex, ey,
                  ex + (int)(cosf(e->angle) * (er + 7)),
                  ey + (int)(sinf(e->angle) * (er + 7)), WHITE);
     }
 
-    // Player — always at screen centre
     int px = sw/2, py = sh/2;
     DrawCircle(px, py, 9, { 100, 160, 225, 255 });
 
-    // Facing direction
     float dX = player.getDirX(), dY = player.getDirY();
     DrawLine(px, py, px + (int)(dX*16), py + (int)(dY*16),
              { 180, 220, 255, 255 });
 
-    // View cone (the FOV wedge the player can see in FPP)
     float plX = player.getPlaneX(), plY = player.getPlaneY();
     int   coneLen = 120;
     DrawLine(px, py,
@@ -353,36 +411,30 @@ void Renderer::drawHUD(const Player& player,
                         Mode mode, bool gameOver,
                         const std::vector<Enemy*>& enemies)
 {
-    // ── Crosshair — FPP only ──────────────────────────────────────────────────
     if (mode == Mode::FPP) {
         int cx = sw/2, cy = sh/2;
         DrawRectangle(cx-10, cy-1, 20, 2, { 210, 210, 210, 160 });
         DrawRectangle(cx-1, cy-10,  2, 20, { 210, 210, 210, 160 });
     }
 
-    // ── Health bar (bottom-left) ──────────────────────────────────────────────
     DrawText("HP", 12, sh-50, 15, { 110, 35, 35, 255 });
     drawBar(12, sh-32, 160, 14,
             (float)player.health / player.maxHealth,
             { 185, 30, 30, 255 }, { 35, 10, 10, 255 });
 
-    // ── Ammo (bottom-right) ───────────────────────────────────────────────────
     const char* ammoStr = TextFormat("AMMO  %02d", player.ammo);
     DrawText(ammoStr, sw - MeasureText(ammoStr, 20) - 10, sh-40, 20,
              { 185, 165, 75, 255 });
 
-    // ── Kills (bottom-centre) ─────────────────────────────────────────────────
     const char* killStr = TextFormat("KILLS  %d", player.kills);
     DrawText(killStr, sw/2 - MeasureText(killStr, 18)/2, sh-36, 18,
              { 75, 125, 75, 255 });
 
-    // ── Level indicator (top-left) ────────────────────────────────────────────
     const char* lvlStr = TextFormat("LEVEL  %d / %d", currentLevel, totalLevels);
     DrawText(lvlStr, 12, 10, 16, { 80, 65, 55, 255 });
     DrawText("WASD move  MOUSE look  SPACE shoot  TAB map",
              12, 28, 11, { 38, 32, 30, 255 });
 
-    // ── Boss health bar (top-centre, only in boss level) ─────────────────────
     for (Enemy* e : enemies) {
         Boss* boss = dynamic_cast<Boss*>(e);
         if (!boss) continue;
@@ -398,7 +450,6 @@ void Renderer::drawHUD(const Player& player,
                     (float)boss->health / boss->maxHealth,
                     { 200, 20, 20, 255 }, { 40, 8, 8, 255 });
 
-            // Charge wind-up warning bar
             float chargeP = boss->getChargeProgress();
             if (chargeP > 0.0f) {
                 const char* warn = "CHARGING";
@@ -408,7 +459,7 @@ void Renderer::drawHUD(const Player& player,
                         { 220, 180, 0, 255 }, { 30, 25, 0, 255 });
             }
         }
-        break; // only one boss
+        break;
     }
 }
 
@@ -416,14 +467,11 @@ void Renderer::drawHUD(const Player& player,
 Color Renderer::getWallColor(int tileType, bool darkSide, float dist) const {
     unsigned char r, g, b;
     switch (tileType) {
-        case 2:  r = 52;  g = 72;  b = 84;  break; // metal: blue-grey
-        case 3:  r = 100; g = 22;  b = 22;  break; // blood: dark red
-        default: r = 84;  g = 64;  b = 52;  break; // stone: brown
+        case 2:  r = 52;  g = 72;  b = 84;  break;
+        case 3:  r = 100; g = 22;  b = 22;  break;
+        default: r = 84;  g = 64;  b = 52;  break;
     }
-    // Y-faces are 60% brightness (gives directional shading without lighting)
     float shade = darkSide ? 0.6f : 1.0f;
-
-    // Distance fog — walls fade to near-black in the distance
     float fog = 1.0f / (1.0f + dist * 0.28f);
     if (fog < 0.12f) fog = 0.12f;
     shade *= fog;

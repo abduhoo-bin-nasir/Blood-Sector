@@ -1,6 +1,6 @@
 CMakeFiles/Blood-Sector.dir/src/Map.cpp.obj: \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Map.cpp \
- D:\Abduhoo\ University\SEMESTER\ 2\Projects\Blood-Sector\src\Map.h \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\blood\ sector\ repo\src\Map.cpp \
+ D:\Abduhoo\ University\SEMESTER\ 2\Projects\blood\ sector\ repo\src\Map.h \
  C:/msys64/mingw64/include/c++/15.2.0/vector \
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
