@@ -39,10 +39,12 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/mingw64/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
       - "/REGISTRY-NOTFOUND/bin/"
       - "c:/MinGW/bin/"
       - "/MinGW/bin/"
@@ -86,11 +88,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -129,10 +133,12 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/mingw64/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/Program Files/Microsoft/jdk-21.0.10.7-hotspot/bin/cc.com"
       - "C:/Program Files/Microsoft/jdk-21.0.10.7-hotspot/bin/cc.exe"
@@ -381,11 +387,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -425,11 +433,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "message-v1"
     backtrace:
@@ -450,7 +460,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
       
       The C compiler identification is GNU, found in:
-        D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/4.3.0-rc2/CompilerIdC/a.exe
+        D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/4.3.0-rc2/CompilerIdC/a.exe
       
   -
     kind: "find-v1"
@@ -484,10 +494,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/ar.com"
     found: "C:/msys64/mingw64/bin/ar.exe"
@@ -505,11 +517,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -542,10 +556,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/ranlib.com"
     found: "C:/msys64/mingw64/bin/ranlib.exe"
@@ -563,11 +579,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -600,10 +618,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/strip.com"
     found: "C:/msys64/mingw64/bin/strip.exe"
@@ -621,11 +641,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -658,10 +680,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/ld.com"
     found: "C:/msys64/mingw64/bin/ld.exe"
@@ -679,11 +703,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -716,10 +742,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/nm.com"
     found: "C:/msys64/mingw64/bin/nm.exe"
@@ -737,11 +765,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -774,10 +804,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/objdump.com"
     found: "C:/msys64/mingw64/bin/objdump.exe"
@@ -795,11 +827,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -832,10 +866,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/objcopy.com"
     found: "C:/msys64/mingw64/bin/objcopy.exe"
@@ -853,11 +889,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -890,10 +928,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/readelf.com"
     found: "C:/msys64/mingw64/bin/readelf.exe"
@@ -911,11 +951,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -948,10 +990,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/dlltool.com"
     found: "C:/msys64/mingw64/bin/dlltool.exe"
@@ -969,11 +1013,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -1006,10 +1052,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/addr2line.com"
     found: "C:/msys64/mingw64/bin/addr2line.exe"
@@ -1027,11 +1075,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -1064,10 +1114,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/tapi.com"
       - "C:/msys64/mingw64/bin/tapi.exe"
@@ -1105,6 +1157,9 @@ events:
       - "C:/Program Files/CMake/bin/tapi.com"
       - "C:/Program Files/CMake/bin/tapi.exe"
       - "C:/Program Files/CMake/bin/tapi"
+      - "C:/Program Files/nodejs/tapi.com"
+      - "C:/Program Files/nodejs/tapi.exe"
+      - "C:/Program Files/nodejs/tapi"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/tapi.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/tapi.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/tapi"
@@ -1117,6 +1172,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/tapi.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/tapi.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/tapi"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/tapi.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/tapi.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -1132,11 +1190,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -1172,10 +1232,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ar-15.2.com"
       - "C:/msys64/mingw64/bin/gcc-ar-15.2.exe"
@@ -1213,6 +1275,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ar-15.2.com"
       - "C:/Program Files/CMake/bin/gcc-ar-15.2.exe"
       - "C:/Program Files/CMake/bin/gcc-ar-15.2"
+      - "C:/Program Files/nodejs/gcc-ar-15.2.com"
+      - "C:/Program Files/nodejs/gcc-ar-15.2.exe"
+      - "C:/Program Files/nodejs/gcc-ar-15.2"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.2.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.2.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.2"
@@ -1225,6 +1290,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.2.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.2.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.2"
       - "C:/msys64/mingw64/bin/gcc-ar-15.com"
       - "C:/msys64/mingw64/bin/gcc-ar-15.exe"
       - "C:/msys64/mingw64/bin/gcc-ar-15"
@@ -1261,6 +1329,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ar-15.com"
       - "C:/Program Files/CMake/bin/gcc-ar-15.exe"
       - "C:/Program Files/CMake/bin/gcc-ar-15"
+      - "C:/Program Files/nodejs/gcc-ar-15.com"
+      - "C:/Program Files/nodejs/gcc-ar-15.exe"
+      - "C:/Program Files/nodejs/gcc-ar-15"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15"
@@ -1273,6 +1344,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15"
       - "C:/msys64/mingw64/bin/gcc-ar15.com"
       - "C:/msys64/mingw64/bin/gcc-ar15.exe"
       - "C:/msys64/mingw64/bin/gcc-ar15"
@@ -1309,6 +1383,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ar15.com"
       - "C:/Program Files/CMake/bin/gcc-ar15.exe"
       - "C:/Program Files/CMake/bin/gcc-ar15"
+      - "C:/Program Files/nodejs/gcc-ar15.com"
+      - "C:/Program Files/nodejs/gcc-ar15.exe"
+      - "C:/Program Files/nodejs/gcc-ar15"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar15.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar15.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar15"
@@ -1321,6 +1398,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar15.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar15.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar15"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar15.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar15.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar15"
       - "C:/msys64/mingw64/bin/gcc-ar.com"
     found: "C:/msys64/mingw64/bin/gcc-ar.exe"
     search_context:
@@ -1337,11 +1417,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -1377,10 +1459,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.exe"
@@ -1418,6 +1502,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.2.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.2"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.2.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.2.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.2"
@@ -1430,6 +1517,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.2.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.2.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.2"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15"
@@ -1466,6 +1556,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-15"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15"
@@ -1478,6 +1571,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15"
       - "C:/msys64/mingw64/bin/gcc-ranlib15.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib15.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib15"
@@ -1514,6 +1610,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ranlib15.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib15.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib15"
+      - "C:/Program Files/nodejs/gcc-ranlib15.com"
+      - "C:/Program Files/nodejs/gcc-ranlib15.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib15"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib15.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib15.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib15"
@@ -1526,6 +1625,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib15.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib15.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib15"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib15.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib15.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib15"
       - "C:/msys64/mingw64/bin/gcc-ranlib.com"
     found: "C:/msys64/mingw64/bin/gcc-ranlib.exe"
     search_context:
@@ -1542,11 +1644,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -1590,11 +1694,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -1634,11 +1740,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "message-v1"
     backtrace:
@@ -1659,7 +1767,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/4.3.0-rc2/CompilerIdCXX/a.exe
+        D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/4.3.0-rc2/CompilerIdCXX/a.exe
       
   -
     kind: "find-v1"
@@ -1696,10 +1804,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ar-15.2.com"
       - "C:/msys64/mingw64/bin/gcc-ar-15.2.exe"
@@ -1737,6 +1847,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ar-15.2.com"
       - "C:/Program Files/CMake/bin/gcc-ar-15.2.exe"
       - "C:/Program Files/CMake/bin/gcc-ar-15.2"
+      - "C:/Program Files/nodejs/gcc-ar-15.2.com"
+      - "C:/Program Files/nodejs/gcc-ar-15.2.exe"
+      - "C:/Program Files/nodejs/gcc-ar-15.2"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.2.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.2.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.2"
@@ -1749,6 +1862,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.2.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.2.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.2"
       - "C:/msys64/mingw64/bin/gcc-ar-15.com"
       - "C:/msys64/mingw64/bin/gcc-ar-15.exe"
       - "C:/msys64/mingw64/bin/gcc-ar-15"
@@ -1785,6 +1901,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ar-15.com"
       - "C:/Program Files/CMake/bin/gcc-ar-15.exe"
       - "C:/Program Files/CMake/bin/gcc-ar-15"
+      - "C:/Program Files/nodejs/gcc-ar-15.com"
+      - "C:/Program Files/nodejs/gcc-ar-15.exe"
+      - "C:/Program Files/nodejs/gcc-ar-15"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-15"
@@ -1797,6 +1916,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar-15"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar-15"
       - "C:/msys64/mingw64/bin/gcc-ar15.com"
       - "C:/msys64/mingw64/bin/gcc-ar15.exe"
       - "C:/msys64/mingw64/bin/gcc-ar15"
@@ -1833,6 +1955,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ar15.com"
       - "C:/Program Files/CMake/bin/gcc-ar15.exe"
       - "C:/Program Files/CMake/bin/gcc-ar15"
+      - "C:/Program Files/nodejs/gcc-ar15.com"
+      - "C:/Program Files/nodejs/gcc-ar15.exe"
+      - "C:/Program Files/nodejs/gcc-ar15"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar15.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar15.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar15"
@@ -1845,6 +1970,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar15.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar15.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ar15"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar15.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar15.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ar15"
       - "C:/msys64/mingw64/bin/gcc-ar.com"
     found: "C:/msys64/mingw64/bin/gcc-ar.exe"
     search_context:
@@ -1861,11 +1989,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -1901,10 +2031,12 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.exe"
@@ -1942,6 +2074,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.2.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.2"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.2.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.2.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.2"
@@ -1954,6 +2089,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.2.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.2.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.2"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15"
@@ -1990,6 +2128,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-15.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-15"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-15"
@@ -2002,6 +2143,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib-15"
       - "C:/msys64/mingw64/bin/gcc-ranlib15.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib15.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib15"
@@ -2038,6 +2182,9 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ranlib15.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib15.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib15"
+      - "C:/Program Files/nodejs/gcc-ranlib15.com"
+      - "C:/Program Files/nodejs/gcc-ranlib15.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib15"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib15.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib15.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib15"
@@ -2050,6 +2197,9 @@ events:
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib15.com"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib15.exe"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/gcc-ranlib15"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib15.com"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib15.exe"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/gcc-ranlib15"
       - "C:/msys64/mingw64/bin/gcc-ranlib.com"
     found: "C:/msys64/mingw64/bin/gcc-ranlib.exe"
     search_context:
@@ -2066,11 +2216,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
   -
     kind: "find-v1"
     backtrace:
@@ -2106,10 +2258,12 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/mingw64/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2172,11 +2326,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Blood-Sector"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2192,8 +2348,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-jckslw"
-      binary: "D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-jckslw"
+      source: "D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-6xgz6l"
+      binary: "D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-6xgz6l"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -2203,13 +2359,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-jckslw'
+        Change Dir: 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-6xgz6l'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_a4834/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a4834.dir\\build.make CMakeFiles/cmTC_a4834.dir/build
-        mingw32-make[1]: Entering directory 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-jckslw'
-        Building C object CMakeFiles/cmTC_a4834.dir/CMakeCCompilerABI.c.obj
-        C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_1942d/fast
+        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1942d.dir\\build.make CMakeFiles/cmTC_1942d.dir/build
+        mingw32-make[1]: Entering directory 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-6xgz6l'
+        Building C object CMakeFiles/cmTC_1942d.dir/CMakeCCompilerABI.c.obj
+        C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe
         Target: x86_64-w64-mingw32
@@ -2217,8 +2373,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a4834.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_a4834.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cce7cBlc.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1942d.dir\\'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_1942d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccGdAUZU.s
         GNU C23 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2237,14 +2393,14 @@ events:
          C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: feaaa8b8d0ead308dc62d839201f7330
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a4834.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cce7cBlc.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1942d.dir\\'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccGdAUZU.s
         GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_a4834.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_a4834.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_1942d.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1942d.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe
         COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -2255,16 +2411,16 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4834.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a4834.'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccrDxTXf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_a4834.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_a4834.dir/objects.a --no-whole-archive --out-implib libcmTC_a4834.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1942d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_1942d.'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cc2qESK5.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1942d.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1942d.dir/objects.a --no-whole-archive --out-implib libcmTC_1942d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccrDxTXf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_a4834.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_a4834.dir/objects.a --no-whole-archive --out-implib libcmTC_a4834.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cc2qESK5.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1942d.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1942d.dir/objects.a --no-whole-archive --out-implib libcmTC_1942d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4834.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a4834.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_a4834.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_a4834.dir/objects.a @CMakeFiles\\cmTC_a4834.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_a4834.dir/objects.a -Wl,--no-whole-archive -o cmTC_a4834.exe -Wl,--out-implib,libcmTC_a4834.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-jckslw'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1942d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_1942d.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1942d.dir/objects.a
+        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_1942d.dir/objects.a @CMakeFiles\\cmTC_1942d.dir\\objects1.rsp
+        C:\\msys64\\mingw64\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_1942d.dir/objects.a -Wl,--no-whole-archive -o cmTC_1942d.exe -Wl,--out-implib,libcmTC_1942d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-6xgz6l'
         
       exitCode: 0
   -
@@ -2297,13 +2453,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-jckslw']
+        ignore line: [Change Dir: 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-6xgz6l']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_a4834/fast]
-        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a4834.dir\\build.make CMakeFiles/cmTC_a4834.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-jckslw']
-        ignore line: [Building C object CMakeFiles/cmTC_a4834.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_1942d/fast]
+        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1942d.dir\\build.make CMakeFiles/cmTC_1942d.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-6xgz6l']
+        ignore line: [Building C object CMakeFiles/cmTC_1942d.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2311,8 +2467,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a4834.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_a4834.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cce7cBlc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1942d.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_1942d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccGdAUZU.s]
         ignore line: [GNU C23 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2331,8 +2487,8 @@ events:
         ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: feaaa8b8d0ead308dc62d839201f7330]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a4834.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cce7cBlc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1942d.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccGdAUZU.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1]
         ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
@@ -2343,9 +2499,9 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a4834.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_a4834.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_a4834.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1942d.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_1942d.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1942d.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -2363,13 +2519,13 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4834.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a4834.']
-        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccrDxTXf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_a4834.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_a4834.dir/objects.a --no-whole-archive --out-implib libcmTC_a4834.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1942d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_1942d.']
+        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cc2qESK5.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1942d.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1942d.dir/objects.a --no-whole-archive --out-implib libcmTC_1942d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccrDxTXf.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cc2qESK5.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -2391,7 +2547,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_a4834.exe] ==> ignore
+          arg [cmTC_1942d.exe] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -2402,10 +2558,10 @@ events:
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_a4834.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_1942d.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_a4834.dll.a] ==> ignore
+          arg [libcmTC_1942d.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2430,7 +2586,7 @@ events:
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccrDxTXf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_a4834.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_a4834.dir/objects.a --no-whole-archive --out-implib libcmTC_a4834.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cc2qESK5.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1942d.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1942d.dir/objects.a --no-whole-archive --out-implib libcmTC_1942d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'C': C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [gcc_eh]
         remove lib [msvcrt]
@@ -2471,8 +2627,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-wv23zl"
-      binary: "D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-wv23zl"
+      source: "D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-cq1z3o"
+      binary: "D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-cq1z3o"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2483,13 +2639,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-wv23zl'
+        Change Dir: 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-cq1z3o'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_28bb0/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_28bb0.dir\\build.make CMakeFiles/cmTC_28bb0.dir/build
-        mingw32-make[1]: Entering directory 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-wv23zl'
-        Building CXX object CMakeFiles/cmTC_28bb0.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_90373/fast
+        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_90373.dir\\build.make CMakeFiles/cmTC_90373.dir/build
+        mingw32-make[1]: Entering directory 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-cq1z3o'
+        Building CXX object CMakeFiles/cmTC_90373.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -2497,8 +2653,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_28bb0.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_28bb0.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccDzLApV.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_90373.dir\\'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_90373.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccbHzFHu.s
         GNU C++17 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2523,14 +2679,14 @@ events:
          C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_28bb0.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccDzLApV.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_90373.dir\\'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccbHzFHu.s
         GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_28bb0.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_28bb0.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_90373.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_90373.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -2541,16 +2697,16 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_28bb0.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_28bb0.'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cclA1uWa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_28bb0.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_28bb0.dir/objects.a --no-whole-archive --out-implib libcmTC_28bb0.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_90373.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_90373.'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccD39rTG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_90373.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_90373.dir/objects.a --no-whole-archive --out-implib libcmTC_90373.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cclA1uWa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_28bb0.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_28bb0.dir/objects.a --no-whole-archive --out-implib libcmTC_28bb0.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccD39rTG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_90373.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_90373.dir/objects.a --no-whole-archive --out-implib libcmTC_90373.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_28bb0.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_28bb0.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_28bb0.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_28bb0.dir/objects.a @CMakeFiles\\cmTC_28bb0.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_28bb0.dir/objects.a -Wl,--no-whole-archive -o cmTC_28bb0.exe -Wl,--out-implib,libcmTC_28bb0.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-wv23zl'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_90373.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_90373.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_90373.dir/objects.a
+        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_90373.dir/objects.a @CMakeFiles\\cmTC_90373.dir\\objects1.rsp
+        C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_90373.dir/objects.a -Wl,--no-whole-archive -o cmTC_90373.exe -Wl,--out-implib,libcmTC_90373.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-cq1z3o'
         
       exitCode: 0
   -
@@ -2589,13 +2745,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-wv23zl']
+        ignore line: [Change Dir: 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-cq1z3o']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_28bb0/fast]
-        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_28bb0.dir\\build.make CMakeFiles/cmTC_28bb0.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-wv23zl']
-        ignore line: [Building CXX object CMakeFiles/cmTC_28bb0.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_90373/fast]
+        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_90373.dir\\build.make CMakeFiles/cmTC_90373.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/CMakeScratch/TryCompile-cq1z3o']
+        ignore line: [Building CXX object CMakeFiles/cmTC_90373.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2603,8 +2759,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_28bb0.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_28bb0.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccDzLApV.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_90373.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_90373.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccbHzFHu.s]
         ignore line: [GNU C++17 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2629,8 +2785,8 @@ events:
         ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_28bb0.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccDzLApV.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_90373.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccbHzFHu.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1]
         ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
@@ -2641,9 +2797,9 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_28bb0.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_28bb0.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_28bb0.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_90373.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_90373.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_90373.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -2661,13 +2817,13 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_28bb0.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_28bb0.']
-        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cclA1uWa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_28bb0.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_28bb0.dir/objects.a --no-whole-archive --out-implib libcmTC_28bb0.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_90373.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_90373.']
+        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccD39rTG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_90373.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_90373.dir/objects.a --no-whole-archive --out-implib libcmTC_90373.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cclA1uWa.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccD39rTG.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2689,7 +2845,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_28bb0.exe] ==> ignore
+          arg [cmTC_90373.exe] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -2700,10 +2856,10 @@ events:
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_28bb0.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_90373.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_28bb0.dll.a] ==> ignore
+          arg [libcmTC_90373.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2729,7 +2885,7 @@ events:
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\cclA1uWa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_28bb0.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_28bb0.dir/objects.a --no-whole-archive --out-implib libcmTC_28bb0.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Muhammad\\AppData\\Local\\Temp\\ccD39rTG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_90373.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_90373.dir/objects.a --no-whole-archive --out-implib libcmTC_90373.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'CXX': C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
@@ -2798,19 +2954,19 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/pkgRedirects/raylibConfig.cmake"
+        path: "D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/pkgRedirects/raylibConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/pkgRedirects/raylib-config.cmake"
+        path: "D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/pkgRedirects/raylib-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/pkgRedirects/lib/cps/raylib.cps"
+        path: "D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/pkgRedirects/lib/cps/raylib.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/Abduhoo University/SEMESTER 2/Projects/blood sector repo/build/CMakeFiles/pkgRedirects/share/cps/raylib.cps"
+        path: "D:/Abduhoo_University/SEMESTER_2/Projects/blood sector repo/build/CMakeFiles/pkgRedirects/share/cps/raylib.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -3006,6 +3162,22 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "C:/Program Files/nodejs/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/lib/cps/raylib.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/share/cps/raylib.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "C:/Program Files/MySQL/MySQL Shell 8.0/raylibConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -3124,11 +3296,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Blood-Sector"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3166,10 +3340,12 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/mingw64/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -3196,10 +3372,12 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/mingw64/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -3225,11 +3403,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Blood-Sector"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3270,10 +3450,12 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/mingw64/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/"
       - "C:/Program Files/include/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/include/"
@@ -3298,10 +3480,12 @@ events:
       - "C:/Program Files/Git/cmd/raylib.h"
       - "C:/Program Files/CMake/bin/raylib.h"
       - "C:/msys64/mingw64/bin/raylib.h"
+      - "C:/Program Files/nodejs/raylib.h"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/raylib.h"
       - "C:/Users/Muhammad/AppData/Local/Microsoft/WindowsApps/raylib.h"
       - "C:/Users/Muhammad/AppData/Local/Programs/Microsoft VS Code/bin/raylib.h"
       - "C:/Users/Muhammad/AppData/Local/GitHubDesktop/bin/raylib.h"
+      - "C:/Users/Muhammad/AppData/Roaming/npm/raylib.h"
       - "C:/Program Files/include/raylib.h"
       - "C:/Program Files/raylib.h"
       - "C:/Program Files (x86)/include/raylib.h"
@@ -3325,11 +3509,13 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Muhammad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Muhammad\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.10.7-hotspot\\\\bin"
+        - "C:\\Users\\Muhammad\\AppData\\Roaming\\npm"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Blood-Sector"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"

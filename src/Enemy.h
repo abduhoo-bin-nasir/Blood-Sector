@@ -48,7 +48,7 @@ public:
     void  behavior(const Map& map) override;
     Color getColor()     const override;
     float getRadius()    const override { return 0.28f; }
-    float getMoveSpeed() const override { return 0.024f; }
+    float getMoveSpeed() const override { return 0.224f; }
 };
 
 // =============================================================================
@@ -64,7 +64,7 @@ public:
     void  behavior(const Map& map) override;
     Color getColor()     const override;
     float getRadius()    const override { return 0.32f; }
-    float getMoveSpeed() const override { return 0.040f; }
+    float getMoveSpeed() const override { return 0.340f; }
 
 private:
     bool frozen;
@@ -85,7 +85,7 @@ public:
     void  behavior(const Map& map) override;
     Color getColor()     const override;
     float getRadius()    const override { return 0.45f; }
-    float getMoveSpeed() const override { return 0.018f; }
+    float getMoveSpeed() const override { return 0.418f; }
 
     bool  isCharging()   const { return charging; }
     float getChargeProgress() const; // 0..1 for wind-up bar

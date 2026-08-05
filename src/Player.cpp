@@ -73,7 +73,7 @@ void Player::shoot(std::vector<Enemy*>& enemies) {
     }
     if (shootCooldown > 0 || ammo <= 0) return;
     ammo--;
-    shootCooldown = 18;
+    shootCooldown = 1;
 
     float dX = getDirX(), dY = getDirY();
 
